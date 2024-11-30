@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Logo Image -->
+    <ImageView
+        android:id="@+id/logo_transparant_Image"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="32dp"
+        android:alpha="128"
+        android:src="@drawable/logo_transparant"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/kotak_regis"
+        android:layout_width="417dp"
+        android:layout_height="586dp"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/rounded_white_box"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <View
+        android:id="@+id/garis_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="340dp"
+        android:background="#80000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/garis_vertical"
+        android:layout_width="1dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="387dp"
+        android:background="#80000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/signIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="205dp"
+        android:layout_marginBottom="385dp"
+        android:text="@string/sign_in"
+        android:textAlignment="center"
+        android:textColor="#006C3F"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/signOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="205dp"
+        android:layout_marginBottom="385dp"
+        android:text="@string/sign_Up"
+        android:textAlignment="center"
+        android:textColor="#006C3F"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/emailText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="320dp"
+        android:layout_marginBottom="25dp"
+        android:text="@string/email_text"
+        android:textAlignment="center"
+        android:textColor="#006C3F"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/guideline3"
+        app:layout_constraintEnd_toEndOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="@+id/guideline6"
+        app:layout_constraintTop_toTopOf="@+id/garis_horizontal" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/editEmail"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="21dp"
+        app:layout_constraintBottom_toBottomOf="@+id/guideline3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailText">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/emailEdit"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:inputType="textEmailAddress"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/password_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="282dp"
+        android:layout_marginBottom="395dp"
+        android:text="@string/password_text"
+        android:textAlignment="center"
+        android:textColor="#006C3F"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline6"
+        app:layout_constraintTop_toBottomOf="@+id/editEmail" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/editPassword"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="21dp"
+        android:layout_marginBottom="370dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password_text">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordEdit"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:inputType="textEmailAddress"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <CheckBox
+        android:id="@+id/checkbox_example"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="270dp"
+        android:checked="false"
+        android:text="@string/remember_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/guideline3"
+        app:layout_constraintTop_toBottomOf="@id/editPassword" />
+
+    <TextView
+        android:id="@+id/forgot_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="21dp"
+        android:autoLink="web"
+        android:linksClickable="true"
+        android:text="@string/forgot_text"
+        android:textColor="#FF0000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/guideline3"
+        app:layout_constraintTop_toBottomOf="@id/editPassword" />
+
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="250dp"
+        android:backgroundTint="#006C3F"
+        android:text="@string/login_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/forgot_pass" />
+
+    <View
+        android:id="@+id/garis_or_kiri"
+        android:layout_width="150dp"
+        android:layout_height="1dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="150dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginButton" />
+
+    <View
+        android:id="@+id/garis_or_kanan"
+        android:layout_width="150dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="150dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/loginButton" />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginBottom="155dp"
+        android:text="@string/or"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginButton"
+        tools:layout_editor_absoluteX="30dp"
+        />
+
+    <ImageView
+        android:id="@+id/google_image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/google"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/garis_or_kiri"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="240dp"
+        android:layout_marginBottom="100dp"/>
+
+    <ImageView
+        android:id="@+id/facebook_image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/facebook"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/garis_or_kiri"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="130dp"
+        android:layout_marginBottom="100dp"/>
+
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="456dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="175dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="390dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="23dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
