@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.setting.SettingFragment">
+
+    <View
+        android:id="@+id/bg_setting"
+        android:layout_width="350dp"
+        android:layout_height="600dp"
+        android:layout_marginTop="60dp"
+        android:alpha="0.4"
+        android:background="@drawable/setting_background"
+        android:elevation="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:elevation="35dp"
+        app:layout_constraintStart_toStartOf="@+id/bg_setting"
+        app:layout_constraintTop_toTopOf="@+id/bg_setting"
+        tools:src="@drawable/profile_image" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/dark_pink"
+        android:elevation="35dp"
+        app:layout_constraintBottom_toBottomOf="@+id/profile_image"
+        app:layout_constraintEnd_toEndOf="@+id/bg_setting"
+        app:layout_constraintStart_toEndOf="@+id/profile_image"
+        app:layout_constraintTop_toTopOf="@+id/profile_image" />
+
+    <View
+        android:id="@+id/garis1"
+        android:layout_width="350dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/horizontal_line"
+        android:elevation="35dp"
+        app:layout_constraintEnd_toEndOf="@+id/bg_setting"
+        app:layout_constraintStart_toStartOf="@+id/bg_setting"
+        app:layout_constraintTop_toBottomOf="@+id/profile_image" />
+
+    <TextView
+        android:id="@+id/accountSetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/account_setting"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/dark_pink"
+        android:elevation="35dp"
+        app:layout_constraintStart_toStartOf="@+id/bg_setting"
+        app:layout_constraintTop_toBottomOf="@+id/garis1" />
+
+    <TextView
+        android:id="@+id/profileSetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:elevation="35dp"
+        android:text="@string/profile"
+        app:layout_constraintStart_toStartOf="@+id/bg_setting"
+        app:layout_constraintTop_toBottomOf="@+id/accountSetting" />
+
+    <View
+        android:id="@+id/gotoProfile"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:elevation="35dp"
+        android:layout_marginEnd="-230dp"
+        android:layout_marginBottom="-2dp"
+        android:background="@drawable/ic_next"
+        app:layout_constraintBottom_toBottomOf="@+id/profileSetting"
+        app:layout_constraintEnd_toEndOf="@+id/bg_setting"
+        app:layout_constraintStart_toEndOf="@+id/profileSetting" />
+
+    <View
+        android:id="@+id/garis2"
+        android:layout_width="350dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/horizontal_line"
+        android:elevation="35dp"
+        app:layout_constraintEnd_toEndOf="@+id/bg_setting"
+        app:layout_constraintStart_toStartOf="@+id/bg_setting"
+        app:layout_constraintTop_toBottomOf="@+id/profileSetting" />
+
+    <TextView
+        android:id="@+id/appSetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:elevation="35dp"
+        android:text="@string/app_setting"
+        android:textColor="@color/dark_pink"
+        app:layout_constraintStart_toStartOf="@+id/bg_setting"
+        app:layout_constraintTop_toBottomOf="@+id/garis2" />
+
+    <TextView
+        android:id="@+id/showNotif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"
+        android:elevation="35dp"
+        android:text="@string/notif"
+        app:layout_constraintStart_toStartOf="@+id/bg_setting"
+        app:layout_constraintTop_toBottomOf="@+id/appSetting" />
+
+    <View
+        android:id="@+id/garis3"
+        android:layout_width="350dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/horizontal_line"
+        android:elevation="35dp"
+        app:layout_constraintEnd_toEndOf="@+id/bg_setting"
+        app:layout_constraintStart_toStartOf="@+id/bg_setting"
+        app:layout_constraintTop_toBottomOf="@+id/showNotif" />
+
+    <Switch
+        android:id="@+id/onOff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginBottom="-5dp"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/showNotif"
+        app:layout_constraintEnd_toEndOf="@+id/bg_setting"
+        app:layout_constraintStart_toEndOf="@+id/showNotif" />
+
+    <TextView
+        android:id="@+id/more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/more"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/dark_pink"
+        android:elevation="35dp"
+        app:layout_constraintStart_toStartOf="@+id/bg_setting"
+        app:layout_constraintTop_toBottomOf="@+id/garis3" />
+
+    <TextView
+        android:id="@+id/aboutUs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:elevation="35dp"
+        android:text="@string/aboutus"
+        app:layout_constraintStart_toStartOf="@+id/bg_setting"
+        app:layout_constraintTop_toBottomOf="@+id/more" />
+
+    <TextView
+        android:id="@+id/tc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:elevation="35dp"
+        android:text="@string/TC"
+        app:layout_constraintStart_toStartOf="@+id/bg_setting"
+        app:layout_constraintTop_toBottomOf="@+id/aboutUs" />
+
+    <View
+        android:id="@+id/gotoAboutUs"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:elevation="35dp"
+        android:layout_marginEnd="-215dp"
+        android:background="@drawable/ic_next"
+        app:layout_constraintBottom_toBottomOf="@+id/aboutUs"
+        app:layout_constraintEnd_toEndOf="@+id/bg_setting"
+        app:layout_constraintStart_toEndOf="@+id/aboutUs" />
+
+    <View
+        android:id="@+id/gotoTC"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:elevation="35dp"
+        android:layout_marginEnd="-135dp"
+        android:background="@drawable/ic_next"
+        app:layout_constraintBottom_toBottomOf="@+id/tc"
+        app:layout_constraintEnd_toEndOf="@+id/bg_setting"
+        app:layout_constraintStart_toEndOf="@+id/tc"
+        tools:src="@drawable/ic_next" />
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/dark_pink"
+        android:text="@string/logout"
+        app:layout_constraintBottom_toBottomOf="@+id/bg_setting"
+        app:layout_constraintEnd_toEndOf="@+id/bg_setting"
+        app:layout_constraintStart_toStartOf="@+id/bg_setting"
+        app:layout_constraintTop_toBottomOf="@+id/tc" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

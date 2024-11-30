@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Foodiefy</string>
+    <string name="title_home">Home</string>
+    <string name="title_history">History</string>
+    <string name="title_ai">FOODIEF-AI</string>
+    <string name="title_setting">Setting</string>
+    <string name="title_profile">Profile</string>
+    <string name="welcome">Welcome!!!</string>
+    <string name="account_setting">Account Setting</string>
+    <string name="profile">Profile</string>
+    <string name="app_setting">Application Setting</string>
+    <string name="notif">Show Notification</string>
+    <string name="more">More</string>
+    <string name="aboutus">About Us</string>
+    <string name="TC">Terms and Conditions</string>
+    <string name="logout">Logout</string>
+    <string name="full_name">Full Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="email">Email</string>
+    <string name="pass">Password</string>
+    <string name="conf_pass">Confirm Password</string>
+    <string name="save">Save</string>
+    <string name="today_calories">TODAY’S CALORIES</string>
+    <string name="protein">Protein</string>
+    <string name="fats">Fats</string>
+    <string name="carbs">Carbs</string>
+    <string name="today_food">TODAY’S FOOD</string>
+</resources>
