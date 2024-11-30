@@ -11,8 +11,8 @@
     <string name="app_setting">Application Setting</string>
     <string name="notif">Show Notification</string>
     <string name="more">More</string>
-    <string name="aboutus">About Us</string>
-    <string name="TC">Terms and Conditions</string>
+    <string name="title_aboutus">About Us</string>
+    <string name="title_TC">Terms and Conditions</string>
     <string name="logout">Logout</string>
     <string name="full_name">Full Name</string>
     <string name="phone_number">Phone Number</string>
@@ -25,4 +25,6 @@
     <string name="fats">Fats</string>
     <string name="carbs">Carbs</string>
     <string name="today_food">TODAY’S FOOD</string>
+    <string name="desc_app">A smart app that helps you easily calculate the calories of your food! Simply take a photo of the food you're abop to eat, and Foodiefy will accurately calculate its calorie content.</string>
+    <string name="develop_by">Develop By :</string>
 </resources>
