@@ -25,4 +25,32 @@
     <string name="fats">Fats</string>
     <string name="carbs">Carbs</string>
     <string name="today_food">TODAY’S FOOD</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="description">A smart app that helps you easily calculate the calories of your food! Simply take a photo of the food you’re about to eat, and Foodiefy will accurately calculate its calorie content.</string>
+    <string name="next">Next</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_Up">Sign Up</string>
+    <string name="email_text">Email</string>
+    <string name="password_text">Password</string>
+    <string name="remember_text">Remember Me</string>
+    <string name="forgot_text">Forgot Password ?</string>
+    <string name="login_text">Sign In</string>
+    <string name="or">Or</string>
+    <string name="text_nama_lengkap">Full Name</string>
+    <string name="nomor_telf">Phone Number</string>
+    <string name="confirmpass_text">Confirm Password</string>
+    <string name="create_acc">Cretae Account</string>
+    <string name="tnc"><![CDATA[Terms & Condition]]></string>
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="previous">Previous</string>
+    <string name="welcome_penjelasan">Track Your Nutrition, maintaining good health should be the primary focus of everyone.</string>
+    <string name="continueButton">Continue</string>
+    <string name="welcome_text">Welcome To</string>
+    <string name="oneoffive">1 of 5</string>
+    <string name="twoffive">2 of 5</string>
+    <string name="threeoffive">3 of 5</string>
+    <string name="fouroffive">4 of 5</string>
+    <string name="fiveoffive">5 of 5</string>
+
 </resources>
