@@ -25,6 +25,4 @@
     <string name="fats">Fats</string>
     <string name="carbs">Carbs</string>
     <string name="today_food">TODAY’S FOOD</string>
-    <string name="desc_app">A smart app that helps you easily calculate the calories of your food! Simply take a photo of the food you're abop to eat, and Foodiefy will accurately calculate its calorie content.</string>
-    <string name="develop_by">Develop By :</string>
 </resources>

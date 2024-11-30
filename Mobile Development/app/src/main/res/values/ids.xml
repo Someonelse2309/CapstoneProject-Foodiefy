@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="logo_transparant_Image" type="id">logo_transparant_Image</item>
+    <item name="kotak_regis" type="id">kotak_regis</item>
+    <item name="garis_horizontal" type="id">garis_horizontal</item>
+    <item name="garis_vertical" type="id">garis_vertical</item>
+    <item name="signIn" type="id">signIn</item>
+    <item name="signOut" type="id">signOut</item>
+    <item name="emailText" type="id">wmailText</item>
+    <item name="guideline7" type="id">guideline7</item>
+    <item name="guideline6" type="id">guideline6</item>
+    <item name="guideline4" type="id">guideline4</item>
+    <item name="guideline3" type="id">guideline3</item>
+    <item name="guideline2" type="id">guideline2</item>
+    <item name="emailEdit" type="id">emailEdit</item>
+    <item name="editEmail" type="id">editEmail</item>
+    <item name="password_text" type="id">password_text</item>
+    <item name="signUp" type="id">signUp</item>
+    <item name="textNama" type="id">textNama</item>
+    <item name="editNama" type="id">editNama</item>
+    <item name="editNama2" type="id">editNama2</item>
+    <item name="editNomor" type="id">editNomor</item>
+</resources>
