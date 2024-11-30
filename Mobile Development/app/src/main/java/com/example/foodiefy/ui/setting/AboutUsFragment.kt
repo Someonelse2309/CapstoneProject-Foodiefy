@@ -7,12 +7,12 @@ import android.view.View
 import android.view.ViewGroup
 import com.bumptech.glide.Glide
 import com.example.foodiefy.R
-import com.example.foodiefy.databinding.FragmentProfileBinding
+import com.example.foodiefy.databinding.FragmentAboutUsBinding
 import com.google.android.material.bottomappbar.BottomAppBar
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
-class ProfileFragment : Fragment() {
-    private var _binding: FragmentProfileBinding? = null
+class AboutUsFragment : Fragment() {
+    private var _binding: FragmentAboutUsBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -21,7 +21,7 @@ class ProfileFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
 
-        _binding = FragmentProfileBinding.inflate(inflater, container, false)
+        _binding = FragmentAboutUsBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
         val bottomAppBar = activity?.findViewById<BottomAppBar>(R.id.bottomAppBar)
@@ -30,10 +30,20 @@ class ProfileFragment : Fragment() {
         val fab = activity?.findViewById<FloatingActionButton>(R.id.scanMain)
         fab?.visibility = View.GONE
 
-        Glide.with(this)
-            .load(R.drawable.profile_image)
-            .circleCrop()
-            .into(binding.profileImage)
+//        Glide.with(this)
+//            .load(R.drawable.amelz)
+//            .circleCrop()
+//            .into(binding.ml1)
+//
+//        Glide.with(this)
+//            .load(R.drawable.bea)
+//            .circleCrop()
+//            .into(binding.ml2)
+//
+//        Glide.with(this)
+//            .load(R.drawable.andi)
+//            .circleCrop()
+//            .into(binding.ml3)
 
         return root
     }
