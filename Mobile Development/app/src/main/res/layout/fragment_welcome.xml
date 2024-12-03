@@ -62,9 +62,9 @@
         android:id="@+id/continueButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="#80006C3F"
-        android:text="@string/continueButton"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/penjelasanWelcome"
-        android:layout_marginTop="60dp" />
+        android:layout_marginBottom="100dp"
+        android:backgroundTint="#80006C3F"
+        android:text="@string/continueButton" />
 </RelativeLayout>
