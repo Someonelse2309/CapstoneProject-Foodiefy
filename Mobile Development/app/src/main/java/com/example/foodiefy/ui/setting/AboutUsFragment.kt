@@ -30,20 +30,40 @@ class AboutUsFragment : Fragment() {
         val fab = activity?.findViewById<FloatingActionButton>(R.id.scanMain)
         fab?.visibility = View.GONE
 
-//        Glide.with(this)
-//            .load(R.drawable.amelz)
-//            .circleCrop()
-//            .into(binding.ml1)
-//
-//        Glide.with(this)
-//            .load(R.drawable.bea)
-//            .circleCrop()
-//            .into(binding.ml2)
-//
-//        Glide.with(this)
-//            .load(R.drawable.andi)
-//            .circleCrop()
-//            .into(binding.ml3)
+        Glide.with(this)
+            .load(R.drawable.nicct)
+            .circleCrop()
+            .into(binding.ml1)
+
+        Glide.with(this)
+            .load(R.drawable.widii)
+            .circleCrop()
+            .into(binding.ml2)
+
+        Glide.with(this)
+            .load(R.drawable.andii)
+            .circleCrop()
+            .into(binding.ml3)
+
+        Glide.with(this)
+            .load(R.drawable.sharon)
+            .circleCrop()
+            .into(binding.md1)
+
+        Glide.with(this)
+            .load(R.drawable.milka)
+            .circleCrop()
+            .into(binding.md2)
+
+        Glide.with(this)
+            .load(R.drawable.amelzz)
+            .circleCrop()
+            .into(binding.cc1)
+
+        Glide.with(this)
+            .load(R.drawable.beea)
+            .circleCrop()
+            .into(binding.cc2)
 
         return root
     }
