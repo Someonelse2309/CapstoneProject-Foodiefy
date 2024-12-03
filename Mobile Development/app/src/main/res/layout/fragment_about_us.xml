@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
-        android:text="@string/desc_app"
+        android:text="@string/description"
         android:textColor="@color/black"
         android:textSize="20dp"
         android:textAlignment="center"
@@ -34,10 +34,10 @@
         android:id="@+id/dev_by"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/develop_by"
+        android:text="@string/dev_by"
         android:textColor="@color/black"
         android:textSize="16dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="50dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/descAboutUs" />
@@ -47,7 +47,7 @@
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginTop="20dp"
-        android:layout_marginEnd="50dp"
+        android:layout_marginEnd="30dp"
         app:layout_constraintEnd_toStartOf="@+id/ml_2"
         app:layout_constraintTop_toBottomOf="@+id/dev_by"
         tools:src="@tools:sample/avatars" />
@@ -65,9 +65,46 @@
         android:id="@+id/ml_3"
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:layout_marginStart="50dp"
+        android:layout_marginStart="30dp"
         app:layout_constraintStart_toEndOf="@+id/ml_2"
         app:layout_constraintTop_toTopOf="@+id/ml_1"
+        tools:src="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/md_1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ml_1"
+        tools:src="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/md_2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintEnd_toStartOf="@+id/cc_1"
+        app:layout_constraintStart_toEndOf="@+id/md_1"
+        app:layout_constraintTop_toTopOf="@+id/md_1"
+        tools:src="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/cc_1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintEnd_toStartOf="@+id/cc_2"
+        app:layout_constraintTop_toTopOf="@+id/cc_2"
+        tools:src="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/cc_2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/md_1"
         tools:src="@tools:sample/avatars" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
