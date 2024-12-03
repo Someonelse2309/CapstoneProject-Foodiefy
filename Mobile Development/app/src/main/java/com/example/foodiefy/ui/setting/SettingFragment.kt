@@ -11,6 +11,7 @@ import androidx.navigation.fragment.findNavController
 import com.bumptech.glide.Glide
 import com.example.foodiefy.R
 import com.example.foodiefy.databinding.FragmentSettingBinding
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class SettingFragment : Fragment() {
 
@@ -27,6 +28,9 @@ class SettingFragment : Fragment() {
 
         _binding = FragmentSettingBinding.inflate(inflater, container, false)
         val root: View = binding.root
+
+        val fab = activity?.findViewById<FloatingActionButton>(R.id.scanMain)
+        fab?.hide()
 
         val profileSetting: View = binding.gotoProfile
         profileSetting.setOnClickListener{

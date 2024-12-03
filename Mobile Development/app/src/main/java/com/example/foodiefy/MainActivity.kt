@@ -49,7 +49,6 @@ class MainActivity : AppCompatActivity() {
         }
 
         blurOverlay.setOnClickListener {
-            // Menutup menu jika overlay diklik
             if (isFabMenuOpen) {
                 toggleFabMenu()
             }

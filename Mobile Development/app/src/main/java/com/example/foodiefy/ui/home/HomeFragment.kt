@@ -10,6 +10,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.bumptech.glide.Glide
 import com.example.foodiefy.R
 import com.example.foodiefy.databinding.FragmentHomeBinding
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class HomeFragment : Fragment() {
 
@@ -27,10 +28,22 @@ class HomeFragment : Fragment() {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
+        val fab = activity?.findViewById<FloatingActionButton>(R.id.scanMain)
+        fab?.show()
+
         Glide.with(this)
             .load(R.drawable.profile_image)
             .circleCrop()
             .into(binding.profileImage)
+
+        Glide.with(this)
+            .load(R.drawable.wajan)
+            .into(binding.wajan)
+
+        Glide.with(this)
+            .load(R.drawable.kiwi)
+            .into(binding.kiwi)
+
         return root
     }
 
