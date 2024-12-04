@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Foodiefy</string>
+
     <string name="title_home">Home</string>
     <string name="title_history">History</string>
     <string name="title_ai">FOODIEF-AI</string>
@@ -21,6 +21,7 @@
     <string name="conf_pass">Confirm Password</string>
     <string name="save">Save</string>
     <string name="today_calories">TODAY’S CALORIES</string>
+    <string name="cals">Calorie</string>
     <string name="protein">Protein</string>
     <string name="fats">Fats</string>
     <string name="carbs">Carbs</string>
@@ -59,7 +60,9 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="text_umur">How old are you?</string>
     <string name="text_weight">What’s your current weight right now?</string>
-    <string name="text_height">What’s your current height right now?</string>
+    <string name="text_height">What’s your current height right now?</string>
+    <string name="no_favorite">Tidak ada favorite</string>
+    <string name="text_activity">What’s your activity intensity?</string>
 
 
 </resources>

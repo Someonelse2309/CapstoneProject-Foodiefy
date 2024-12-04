@@ -78,7 +78,7 @@
         android:id="@+id/continueButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="#80006C3F"
+        android:backgroundTint="#96CAB4"
         android:text="@string/continueButton"
         android:layout_centerHorizontal="true"
         app:layout_constraintStart_toStartOf="parent"
