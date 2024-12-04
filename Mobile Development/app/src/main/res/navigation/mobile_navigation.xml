@@ -35,6 +35,10 @@
         <action
             android:id="@+id/action_settingFragment_to_aboutUsFragment"
             app:destination="@id/navigation_aboutUs" />
+
+        <action
+            android:id="@+id/action_settingFragment_to_termsFragment"
+            app:destination="@id/navigation_terms" />
     </fragment>
 
     <fragment
@@ -48,4 +52,10 @@
         android:name="com.example.foodiefy.ui.setting.AboutUsFragment"
         android:label="@string/title_aboutus"
         tools:layout="@layout/fragment_about_us" />
+
+    <fragment
+        android:id="@+id/navigation_terms"
+        android:name="com.example.foodiefy.ui.setting.TermsFragment"
+        android:label="@string/title_TC"
+        tools:layout="@layout/fragment_terms" />
 </navigation>

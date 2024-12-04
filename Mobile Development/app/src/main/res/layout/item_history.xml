@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    card_view:cardCornerRadius="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/image_food"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent"
+            tools:src="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/food_name"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:textSize="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            card_view:layout_constraintStart_toEndOf="@+id/image_food"
+            card_view:layout_constraintTop_toTopOf="parent"
+            tools:text="food name" />
+
+        <TextView
+            android:id="@+id/history_cal"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="@string/cals"
+            android:textColor="@color/blue"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            card_view:layout_constraintStart_toEndOf="@+id/image_food"
+            card_view:layout_constraintTop_toBottomOf="@+id/food_name" />
+
+        <TextView
+            android:id="@+id/history_protein"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="@string/protein"
+            android:textColor="@color/green"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:layout_marginStart="20dp"
+            card_view:layout_constraintStart_toEndOf="@+id/history_cal"
+            card_view:layout_constraintTop_toTopOf="@+id/history_cal" />
+
+        <TextView
+            android:id="@+id/history_carbs"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="@string/carbs"
+            android:textColor="@color/yellow"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"
+            card_view:layout_constraintStart_toEndOf="@+id/history_protein"
+            card_view:layout_constraintTop_toTopOf="@+id/history_protein" />
+
+        <TextView
+            android:id="@+id/history_fats"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="@string/fats"
+            android:textColor="@color/light_orange"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"
+            card_view:layout_constraintStart_toEndOf="@+id/history_carbs"
+            card_view:layout_constraintTop_toTopOf="@+id/history_carbs" />
+
+        <TextView
+            android:id="@+id/history_number_cal"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:textSize="12dp"
+            card_view:layout_constraintEnd_toEndOf="@+id/history_cal"
+            card_view:layout_constraintStart_toStartOf="@+id/history_cal"
+            card_view:layout_constraintTop_toBottomOf="@+id/history_cal"
+            tools:text="0g" />
+
+        <TextView
+            android:id="@+id/history_number_protein"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:textSize="12dp"
+            card_view:layout_constraintEnd_toEndOf="@+id/history_protein"
+            card_view:layout_constraintStart_toStartOf="@+id/history_protein"
+            card_view:layout_constraintTop_toBottomOf="@+id/history_protein"
+            tools:text="0g" />
+
+        <TextView
+            android:id="@+id/history_number_carbs"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:textSize="12dp"
+            card_view:layout_constraintEnd_toEndOf="@+id/history_carbs"
+            card_view:layout_constraintStart_toStartOf="@+id/history_carbs"
+            card_view:layout_constraintTop_toBottomOf="@+id/history_carbs"
+            tools:text="0g" />
+
+        <TextView
+            android:id="@+id/history_number_fats"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:textSize="12dp"
+            card_view:layout_constraintEnd_toEndOf="@+id/history_fats"
+            card_view:layout_constraintStart_toStartOf="@+id/history_fats"
+            card_view:layout_constraintTop_toBottomOf="@+id/history_fats"
+            tools:text="0g" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
