@@ -3,8 +3,10 @@ package com.example.foodiefy.ui.setting
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
+import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import com.bumptech.glide.Glide
 import com.example.foodiefy.R
 import com.example.foodiefy.databinding.FragmentProfileBinding
@@ -37,6 +39,7 @@ class ProfileFragment : Fragment() {
 
         return root
     }
+
 
     override fun onDestroyView() {
         super.onDestroyView()
