@@ -2,18 +2,18 @@
   {  
       "id": "apple_pie",  
       "name": "Apple Pie",  
-      "calories": 320,  
-      "carbs": 45,  
-      "protein": 2,  
-      "fat": 15  
+      "calories": 250,  
+      "carbs": 36,  
+      "protein": 1,  
+      "fat": 12  
     },  
     {  
       "id": "baby_back_ribs",  
       "name": "Baby Back Ribs",  
-      "calories": 350,  
-      "carbs": 5,  
-      "protein": 30,  
-      "fat": 25  
+      "calories": 290,  
+      "carbs": 3,  
+      "protein": 25,  
+      "fat": 20  
     },  
     {  
       "id": "baklava",  
@@ -58,26 +58,26 @@
     {  
       "id": "bibimbap",  
       "name": "Bibimbap",  
-      "calories": 500,  
-      "carbs": 70,  
-      "protein": 20,  
-      "fat": 15  
+      "calories": 150,  
+      "carbs": 25,  
+      "protein": 5,  
+      "fat": 5  
     },  
     {  
       "id": "bread_pudding",  
       "name": "Bread Pudding",  
-      "calories": 350,  
-      "carbs": 50,  
-      "protein": 8,  
-      "fat": 10  
+      "calories": 250,  
+      "carbs": 40,  
+      "protein": 5,  
+      "fat": 8  
     },  
     {  
       "id": "breakfast_burrito",  
       "name": "Breakfast Burrito",  
-      "calories": 450,  
-      "carbs": 50,  
-      "protein": 25,  
-      "fat": 20  
+      "calories": 200,  
+      "carbs": 30,  
+      "protein": 10,  
+      "fat": 8  
     },  
     {  
       "id": "bruschetta",  
@@ -90,10 +90,10 @@
     {  
       "id": "caesar_salad",  
       "name": "Caesar Salad",  
-      "calories": 300,  
-      "carbs": 10,  
-      "protein": 10,  
-      "fat": 25  
+      "calories": 200,  
+      "carbs": 8,  
+      "protein": 6,  
+      "fat": 18  
     },  
     {  
       "id": "cannoli",  
@@ -114,10 +114,10 @@
     {  
       "id": "carrot_cake",  
       "name": "Carrot Cake",  
-      "calories": 400,  
-      "carbs": 60,  
+      "calories": 350,  
+      "carbs": 55,  
       "protein": 5,  
-      "fat": 18  
+      "fat": 15  
     },  
     {  
       "id": "ceviche",  
@@ -130,48 +130,48 @@
     {  
       "id": "cheese_plate",  
       "name": "Cheese Plate",  
-      "calories": 500,  
+      "calories": 400,  
       "carbs": 10,  
-      "protein": 30,  
-      "fat": 40  
+      "protein": 25,  
+      "fat": 35  
     },  
     {  
       "id": "cheesecake",  
       "name": "Cheesecake",  
-      "calories": 450,  
-      "carbs": 40,  
+      "calories": 350,  
+      "carbs": 30,  
       "protein": 8,  
-      "fat": 30  
+      "fat": 25  
     },  
     {  
       "id": "chicken_curry",  
       "name": "Chicken Curry",  
-      "calories": 400,  
-      "carbs": 30,  
-      "protein": 30,  
-      "fat": 20  
+      "calories": 200,  
+      "carbs": 15,  
+      "protein": 20,  
+      "fat": 10  
     },  
     {  
       "id": "chicken_quesadilla",  
       "name": "Chicken Quesadilla",  
-      "calories": 500,  
-      "carbs": 40,  
-      "protein": 25,  
-      "fat": 30  
+      "calories": 250,  
+      "carbs": 30,  
+      "protein": 15,  
+      "fat": 15  
     },  
     {  
       "id": "chicken_wings",  
       "name": "Chicken Wings",  
-      "calories": 600,  
+      "calories": 300,  
       "carbs": 0,  
-      "protein": 40,  
-      "fat": 45  
+      "protein": 20,  
+      "fat": 25  
     },  
     {  
       "id": "chocolate_cake",  
       "name": "Chocolate Cake",  
-      "calories": 400,  
-      "carbs": 60,  
+      "calories": 350,  
+      "carbs": 55,  
       "protein": 6,  
       "fat": 18  
     },  
@@ -194,26 +194,26 @@
     {  
       "id": "clam_chowder",  
       "name": "Clam Chowder",  
-      "calories": 250,  
+      "calories": 200,  
       "carbs": 20,  
-      "protein": 15,  
-      "fat": 15  
+      "protein": 8,  
+      "fat": 10  
     },  
     {  
       "id": "club_sandwich",  
       "name": "Club Sandwich",  
-      "calories": 600,  
-      "carbs": 40,  
-      "protein": 35,  
-      "fat": 30  
+      "calories": 300,  
+      "carbs": 30,  
+      "protein": 20,  
+      "fat": 15  
     },  
     {  
       "id": "crab_cakes",  
       "name": "Crab Cakes",  
-      "calories": 400,  
+      "calories": 250,  
       "carbs": 20,  
-      "protein": 25,  
-      "fat": 25  
+      "protein": 15,  
+      "fat": 15  
     },  
     {  
       "id": "creme_brulee",  
@@ -226,10 +226,10 @@
     {  
       "id": "croque_madame",  
       "name": "Croque Madame",  
-      "calories": 500,  
-      "carbs": 40,  
-      "protein": 25,  
-      "fat": 30  
+      "calories": 300,  
+      "carbs": 30,  
+      "protein": 15,  
+      "fat": 20  
     },  
     {  
       "id": "cup_cakes",  
@@ -250,10 +250,10 @@
     {  
       "id": "donuts",  
       "name": "Donuts",  
-      "calories": 300,  
-      "carbs": 40,  
+      "calories": 400,  
+      "carbs": 50,  
       "protein": 4,  
-      "fat": 15  
+      "fat": 20  
     },  
     {  
       "id": "dumplings",  
@@ -266,50 +266,50 @@
     {  
       "id": "edamame",  
       "name": "Edamame",  
-      "calories": 200,  
-      "carbs": 15,  
-      "protein": 18,  
-      "fat": 8  
+      "calories": 120,  
+      "carbs": 10,  
+      "protein": 11,  
+      "fat": 5  
     },  
     {  
       "id": "eggs_benedict",  
       "name": "Eggs Benedict",  
-      "calories": 400,  
-      "carbs": 30,  
-      "protein": 20,  
-      "fat": 25  
+      "calories": 300,  
+      "carbs": 20,  
+      "protein": 15,  
+      "fat": 20  
     },  
     {  
       "id": "escargots",  
       "name": "Escargots",  
-      "calories": 250,  
+      "calories": 200,  
       "carbs": 5,  
       "protein": 20,  
-      "fat": 15  
+      "fat": 10  
     },  
     {  
       "id": "falafel",  
       "name": "Falafel",  
-      "calories": 300,  
+      "calories": 250,  
       "carbs": 40,  
-      "protein": 12,  
-      "fat": 15  
+      "protein": 10,  
+      "fat": 12  
     },  
     {  
       "id": "filet_mignon",  
       "name": "Filet Mignon",  
-      "calories": 500,  
+      "calories": 300,  
       "carbs": 0,  
-      "protein": 40,  
-      "fat": 35  
+      "protein": 30,  
+      "fat": 20  
     },  
     {  
       "id": "fish_and_chips",  
       "name": "Fish and Chips",  
-      "calories": 600,  
-      "carbs": 70,  
-      "protein": 25,  
-      "fat": 30  
+      "calories": 300,  
+      "carbs": 40,  
+      "protein": 15,  
+      "fat": 15  
     },  
     {  
       "id": "foie_gras",  
@@ -322,42 +322,42 @@
     {  
       "id": "french_fries",  
       "name": "French Fries",  
-      "calories": 400,  
-      "carbs": 60,  
-      "protein": 5,  
-      "fat": 20  
+      "calories": 365,  
+      "carbs": 63,  
+      "protein": 3,  
+      "fat": 17  
     },  
     {  
       "id": "french_onion_soup",  
       "name": "French Onion Soup",  
-      "calories": 250,  
-      "carbs": 20,  
-      "protein": 8,  
-      "fat": 15  
+      "calories": 150,  
+      "carbs": 15,  
+      "protein": 5,  
+      "fat": 7  
     },  
     {  
       "id": "french_toast",  
       "name": "French Toast",  
-      "calories": 350,  
-      "carbs": 50,  
+      "calories": 250,  
+      "carbs": 40,  
       "protein": 10,  
-      "fat": 15  
+      "fat": 10  
     },  
     {  
       "id": "fried_calamari",  
       "name": "Fried Calamari",  
-      "calories": 300,  
+      "calories": 250,  
       "carbs": 20,  
       "protein": 15,  
-      "fat": 20  
+      "fat": 15  
     },  
     {  
       "id": "fried_rice",  
       "name": "Fried Rice",  
-      "calories": 400,  
-      "carbs": 60,  
-      "protein": 10,  
-      "fat": 15  
+      "calories": 200,  
+      "carbs": 30,  
+      "protein": 5,  
+      "fat": 8  
     },  
     {  
       "id": "frozen_yogurt",  
@@ -378,82 +378,82 @@
     {  
       "id": "gnocchi",  
       "name": "Gnocchi",  
-      "calories": 350,  
-      "carbs": 60,  
-      "protein": 10,  
-      "fat": 10  
+      "calories": 200,  
+      "carbs": 40,  
+      "protein": 5,  
+      "fat": 5  
     },  
     {  
       "id": "greek_salad",  
       "name": "Greek Salad",  
-      "calories": 200,  
+      "calories": 150,  
       "carbs": 10,  
       "protein": 6,  
-      "fat": 15  
+      "fat": 10  
     },  
     {  
       "id": "grilled_cheese_sandwich",  
       "name": "Grilled Cheese Sandwich",  
-      "calories": 400,  
-      "carbs": 40,  
+      "calories": 350,  
+      "carbs": 30,  
       "protein": 15,  
       "fat": 25  
     },  
     {  
       "id": "grilled_salmon",  
       "name": "Grilled Salmon",  
-      "calories": 350,  
+      "calories": 206,  
       "carbs": 0,  
-      "protein": 40,  
-      "fat": 20  
+      "protein": 25,  
+      "fat": 13  
     },  
     {  
       "id": "guacamole",  
       "name": "Guacamole",  
-      "calories": 250,  
-      "carbs": 12,  
-      "protein": 4,  
-      "fat": 22  
+      "calories": 160,  
+      "carbs": 9,  
+      "protein": 2,  
+      "fat": 15  
     },  
     {  
       "id": "gyoza",  
       "name": "Gyoza",  
-      "calories": 300,  
-      "carbs": 40,  
+      "calories": 250,  
+      "carbs": 30,  
       "protein": 12,  
-      "fat": 15  
+      "fat": 12  
     },  
     {  
       "id": "hamburger",  
       "name": "Hamburger",  
-      "calories": 500,  
-      "carbs": 40,  
-      "protein": 30,  
-      "fat": 30  
+      "calories": 250,  
+      "carbs": 30,  
+      "protein": 15,  
+      "fat": 15  
     },  
     {  
       "id": "hot_and_sour_soup",  
       "name": "Hot and Sour Soup",  
-      "calories": 200,  
-      "carbs": 20,  
-      "protein": 8,  
-      "fat": 10  
+      "calories": 100,  
+      "carbs": 10,  
+      "protein": 4,  
+      "fat": 5  
     },  
     {  
       "id": "hot_dog",  
       "name": "Hot Dog",  
-      "calories": 300,  
+      "calories": 250,  
       "carbs": 2,  
       "protein": 10,  
-      "fat": 25  
+      "fat": 20  
     },  
     {  
       "id": "huevos_rancheros",  
       "name": "Huevos Rancheros",  
-      "calories": 400,  
-      "carbs": 30,  
-      "protein": 20,  
-      "fat": 25  
+      "calories": 250,  
+      "carbs": 20,  
+      "protein": 15,  
+      "fat": 15  
     },  
     {  
       "id": "hummus",  
@@ -474,10 +474,10 @@
     {  
       "id": "lasagna",  
       "name": "Lasagna",  
-      "calories": 500,  
-      "carbs": 60,  
-      "protein": 25,  
-      "fat": 25  
+      "calories": 250,  
+      "carbs": 30,  
+      "protein": 15,  
+      "fat": 15  
     },  
     {  
       "id": "lobster_bisque",  
@@ -490,34 +490,34 @@
     {  
       "id": "lobster_roll_sandwich",  
       "name": "Lobster Roll Sandwich",  
-      "calories": 600,  
-      "carbs": 40,  
-      "protein": 30,  
-      "fat": 35  
+      "calories": 300,  
+      "carbs": 20,  
+      "protein": 20,  
+      "fat": 15  
     },  
     {  
       "id": "macaroni_and_cheese",  
       "name": "Macaroni and Cheese",  
-      "calories": 400,  
-      "carbs": 50,  
-      "protein": 15,  
-      "fat": 20  
+      "calories": 300,  
+      "carbs": 40,  
+      "protein": 10,  
+      "fat": 15  
     },  
     {  
       "id": "macarons",  
       "name": "Macarons",  
-      "calories": 300,  
-      "carbs": 40,  
+      "calories": 400,  
+      "carbs": 60,  
       "protein": 5,  
       "fat": 15  
     },  
     {  
       "id": "miso_soup",  
       "name": "Miso Soup",  
-      "calories": 150,  
-      "carbs": 20,  
-      "protein": 8,  
-      "fat": 5  
+      "calories": 50,  
+      "carbs": 8,  
+      "protein": 3,  
+      "fat": 2  
     },  
     {  
       "id": "mussels",  
@@ -530,18 +530,18 @@
     {  
       "id": "nachos",  
       "name": "Nachos",  
-      "calories": 500,  
-      "carbs": 60,  
-      "protein": 15,  
-      "fat": 30  
+      "calories": 300,  
+      "carbs": 40,  
+      "protein": 10,  
+      "fat": 15  
     },  
     {  
       "id": "omelette",  
       "name": "Omelette",  
-      "calories": 300,  
-      "carbs": 5,  
-      "protein": 20,  
-      "fat": 20  
+      "calories": 150,  
+      "carbs": 2,  
+      "protein": 10,  
+      "fat": 10  
     },  
     {  
       "id": "onion_rings",  
@@ -562,25 +562,25 @@
     {  
       "id": "pad_thai",  
       "name": "Pad Thai",  
-      "calories": 600,  
-      "carbs": 80,  
-      "protein": 20,  
-      "fat": 25  
+      "calories": 200,  
+      "carbs": 30,  
+      "protein": 10,  
+      "fat": 8  
     },  
     {  
       "id": "paella",  
       "name": "Paella",  
-      "calories": 500,  
-      "carbs": 60,  
-      "protein": 25,  
-      "fat": 20  
+      "calories": 250,  
+      "carbs": 35,  
+      "protein": 15,  
+      "fat": 10  
     },  
     {  
       "id": "pancakes",  
       "name": "Pancakes",  
-      "calories": 350,  
-      "carbs": 60,  
-      "protein": 8,  
+      "calories": 250,  
+      "carbs": 40,  
+      "protein": 6,  
       "fat": 10  
     },  
     {  
@@ -594,103 +594,103 @@
     {  
       "id": "peking_duck",  
       "name": "Peking Duck",  
-      "calories": 600,  
+      "calories": 300,  
       "carbs": 0,  
-      "protein": 40,  
-      "fat": 50  
+      "protein": 20,  
+      "fat": 25  
     },  
     {  
       "id": "pho",  
       "name": "Pho",  
-      "calories": 350,  
-      "carbs": 40,  
-      "protein": 25,  
-      "fat": 10  
-    },  
+      "calories": 150,  
+      "carbs": 20,  
+      "protein": 10,  
+      "fat": 5  
+    },
     {  
       "id": "pizza",  
       "name": "Pizza",  
-      "calories": 600,  
-      "carbs": 70,  
-      "protein": 30,  
-      "fat": 30  
-    },
+      "calories": 300,  
+      "carbs": 36,  
+      "protein": 12,  
+      "fat": 12  
+    },  
     {  
       "id": "pork_chop",  
       "name": "Pork Chop",  
-      "calories": 400,  
+      "calories": 250,  
       "carbs": 0,  
-      "protein": 30,  
-      "fat": 25  
+      "protein": 26,  
+      "fat": 16  
     },  
     {  
       "id": "poutine",  
       "name": "Poutine",  
-      "calories": 700,  
-      "carbs": 80,  
-      "protein": 20,  
-      "fat": 40  
+      "calories": 300,  
+      "carbs": 40,  
+      "protein": 10,  
+      "fat": 15  
     },  
     {  
       "id": "prime_rib",  
       "name": "Prime Rib",  
-      "calories": 500,  
+      "calories": 300,  
       "carbs": 0,  
-      "protein": 40,  
-      "fat": 35  
+      "protein": 28,  
+      "fat": 20  
     },  
     {  
       "id": "pulled_pork_sandwich",  
       "name": "Pulled Pork Sandwich",  
-      "calories": 600,  
-      "carbs": 50,  
-      "protein": 30,  
-      "fat": 35  
-    },  
-    {  
-      "id": "ramen",  
-      "name": "Ramen",  
-      "calories": 400,  
-      "carbs": 60,  
-      "protein": 20,  
-      "fat": 15  
-    },  
-    {  
-      "id": "ravioli",  
-      "name": "Ravioli",  
-      "calories": 350,  
-      "carbs": 50,  
+      "calories": 250,  
+      "carbs": 30,  
       "protein": 15,  
       "fat": 10  
     },  
     {  
+      "id": "ramen",  
+      "name": "Ramen",  
+      "calories": 150,  
+      "carbs": 25,  
+      "protein": 8,  
+      "fat": 5  
+    },  
+    {  
+      "id": "ravioli",  
+      "name": "Ravioli",  
+      "calories": 200,  
+      "carbs": 30,  
+      "protein": 8,  
+      "fat": 5  
+    },  
+    {  
       "id": "red_velvet_cake",  
       "name": "Red Velvet Cake",  
-      "calories": 400,  
-      "carbs": 60,  
+      "calories": 350,  
+      "carbs": 55,  
       "protein": 6,  
       "fat": 18  
     },  
     {  
       "id": "risotto",  
       "name": "Risotto",  
-      "calories": 400,  
-      "carbs": 60,  
-      "protein": 15,  
-      "fat": 15  
+      "calories": 200,  
+      "carbs": 30,  
+      "protein": 8,  
+      "fat": 8  
     },  
     {  
       "id": "samosa",  
       "name": "Samosa",  
-      "calories": 300,  
-      "carbs": 40,  
-      "protein": 8,  
-      "fat": 15  
+      "calories": 200,  
+      "carbs": 30,  
+      "protein": 5,  
+      "fat": 10  
     },  
     {  
       "id": "sashimi",  
       "name": "Sashimi",  
-      "calories": 200,  
+      "calories": 150,  
       "carbs": 0,  
       "protein": 25,  
       "fat": 5  
@@ -698,10 +698,10 @@
     {  
       "id": "scallops",  
       "name": "Scallops",  
-      "calories": 250,  
+      "calories": 150,  
       "carbs": 0,  
       "protein": 30,  
-      "fat": 10  
+      "fat": 2  
     },  
     {  
       "id": "seaweed_salad",  
@@ -714,97 +714,97 @@
     {  
       "id": "shrimp_and_grits",  
       "name": "Shrimp and Grits",  
-      "calories": 500,  
-      "carbs": 60,  
-      "protein": 25,  
-      "fat": 20  
-    },  
-    {  
-      "id": "spaghetti_bolognese",  
-      "name": "Spaghetti Bolognese",  
-      "calories": 600,  
-      "carbs": 70,  
-      "protein": 30,  
-      "fat": 25  
-    },  
-    {  
-      "id": "spaghetti_carbonara",  
-      "name": "Spaghetti Carbonara",  
-      "calories": 700,  
-      "carbs": 60,  
-      "protein": 30,  
-      "fat": 40  
-    },  
-    {  
-      "id": "spring_rolls",  
-      "name": "Spring Rolls",  
-      "calories": 300,  
-      "carbs": 40,  
-      "protein": 8,  
-      "fat": 10  
-    },  
-    {  
-      "id": "steak",  
-      "name": "Steak",  
-      "calories": 600,  
-      "carbs": 0,  
-      "protein": 50,  
-      "fat": 40  
-    },  
-    {  
-      "id": "strawberry_shortcake",  
-      "name": "Strawberry Shortcake",  
-      "calories": 350,  
-      "carbs": 50,  
-      "protein": 6,  
-      "fat": 15  
-    },  
-    {  
-      "id": "sushi",  
-      "name": "Sushi",  
-      "calories": 300,  
-      "carbs": 40,  
+      "calories": 250,  
+      "carbs": 30,  
       "protein": 15,  
       "fat": 10  
     },  
     {  
+      "id": "spaghetti_bolognese",  
+      "name": "Spaghetti Bolognese",  
+      "calories": 200,  
+      "carbs": 30,  
+      "protein": 10,  
+      "fat": 8  
+    },  
+    {  
+      "id": "spaghetti_carbonara",  
+      "name": "Spaghetti Carbonara",  
+      "calories": 300,  
+      "carbs": 30,  
+      "protein": 15,  
+      "fat": 15  
+    },  
+    {  
+      "id": "spring_rolls",  
+      "name": "Spring Rolls",  
+      "calories": 200,  
+      "carbs": 30,  
+      "protein": 5,  
+      "fat": 8  
+    },  
+    {  
+      "id": "steak",  
+      "name": "Steak",  
+      "calories": 250,  
+      "carbs": 0,  
+      "protein": 26,  
+      "fat": 20  
+    },  
+    {  
+      "id": "strawberry_shortcake",  
+      "name": "Strawberry Shortcake",  
+      "calories": 250,  
+      "carbs": 40,  
+      "protein": 5,  
+      "fat": 10  
+    },  
+    {  
+      "id": "sushi",  
+      "name": "Sushi",  
+      "calories": 200,  
+      "carbs": 30,  
+      "protein": 10,  
+      "fat": 5  
+    },  
+    {  
       "id": "tacos",  
       "name": "Tacos",  
-      "calories": 400,  
-      "carbs": 40,  
-      "protein": 20,  
-      "fat": 25  
+      "calories": 200,  
+      "carbs": 20,  
+      "protein": 10,  
+      "fat": 10  
     },  
     {  
       "id": "takoyaki",  
       "name": "Takoyaki",  
-      "calories": 300,  
-      "carbs": 40,  
+      "calories": 250,  
+      "carbs": 30,  
       "protein": 10,  
       "fat": 15  
     },  
     {  
       "id": "tiramisu",  
       "name": "Tiramisu",  
-      "calories": 400,  
-      "carbs": 50,  
-      "protein": 8,  
-      "fat": 20  
+      "calories": 300,  
+      "carbs": 40,  
+      "protein": 6,  
+      "fat": 15  
     },  
     {  
       "id": "tuna_tartare",  
       "name": "Tuna Tartare",  
-      "calories": 250,  
+      "calories": 150,  
       "carbs": 0,  
       "protein": 30,  
-      "fat": 15  
+      "fat": 5  
     },  
     {  
       "id": "waffles",  
       "name": "Waffles",  
-      "calories": 350,  
-      "carbs": 60,  
-      "protein": 8,  
+      "calories": 300,  
+      "carbs": 50,  
+      "protein": 6,  
       "fat": 15  
     }
 ]
