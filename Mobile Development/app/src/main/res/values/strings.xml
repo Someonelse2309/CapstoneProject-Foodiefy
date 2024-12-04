@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Foodiefy</string>
+
     <string name="title_home">Home</string>
     <string name="title_history">History</string>
     <string name="title_ai">FOODIEF-AI</string>
@@ -62,6 +62,5 @@
     <string name="text_weight">What’s your current weight right now?</string>
     <string name="text_height">What’s your current height right now?</string>
     <string name="no_favorite">Tidak ada favorite</string>
-
-
+    <string name="text_activity">What’s your activity intensity?</string>
 </resources>
