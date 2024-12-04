@@ -1,14 +1,23 @@
 package com.example.foodiefy
 
+import android.Manifest
+import android.content.Intent
+import android.content.pm.PackageManager
+import android.net.Uri
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
+import androidx.activity.result.contract.ActivityResultContracts
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import androidx.navigation.findNavController
+import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.foodiefy.databinding.ActivityMainBinding
+import com.example.foodiefy.ui.scan.scanFood.ScanFoodActivity
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class MainActivity : AppCompatActivity() {
@@ -48,12 +57,41 @@ class MainActivity : AppCompatActivity() {
             toggleFabMenu()
         }
 
+        fabFood.setOnClickListener {
+            startCameraX()
+        }
+
+        fabIngredients.setOnClickListener {
+            startCameraX()
+        }
+
         blurOverlay.setOnClickListener {
             if (isFabMenuOpen) {
                 toggleFabMenu()
             }
         }
+
+        if (!allPermissionsGranted()) {
+            requestPermissionLauncher.launch(REQUIRED_PERMISSION)
+        }
     }
+
+    private val requestPermissionLauncher =
+        registerForActivityResult(
+            ActivityResultContracts.RequestPermission()
+        ) { isGranted: Boolean ->
+            if (isGranted) {
+                Toast.makeText(this, "Permission request granted", Toast.LENGTH_LONG).show()
+            } else {
+                Toast.makeText(this, "Permission request denied", Toast.LENGTH_LONG).show()
+            }
+        }
+
+    private fun allPermissionsGranted() =
+        ContextCompat.checkSelfPermission(
+            this,
+            REQUIRED_PERMISSION
+        ) == PackageManager.PERMISSION_GRANTED
 
     override fun onSupportNavigateUp(): Boolean {
         val navController = findNavController(R.id.nav_host_fragment_activity_main)
@@ -72,5 +110,14 @@ class MainActivity : AppCompatActivity() {
             blurOverlay.visibility = View.VISIBLE
             isFabMenuOpen = true
         }
+    }
+
+    private fun startCameraX() {
+        val intent = Intent(this, ScanFoodActivity::class.java)
+        startActivity(intent)
+    }
+
+    companion object {
+        private const val REQUIRED_PERMISSION = Manifest.permission.CAMERA
     }
 }
