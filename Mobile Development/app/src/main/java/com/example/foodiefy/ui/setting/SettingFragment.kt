@@ -42,6 +42,11 @@ class SettingFragment : Fragment() {
             findNavController().navigate(R.id.action_settingFragment_to_aboutUsFragment)
         }
 
+        val termsSetting: View = binding.gotoTC
+        termsSetting.setOnClickListener{
+            findNavController().navigate(R.id.action_settingFragment_to_termsFragment)
+        }
+
         Glide.with(this)
             .load(R.drawable.profile_image)
             .circleCrop()
