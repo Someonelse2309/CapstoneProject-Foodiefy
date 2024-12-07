@@ -5,9 +5,12 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import com.example.foodiefy.databinding.ActivityScanFoodBinding
 import android.Manifest
+import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.Build
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.util.Log
 import android.view.OrientationEventListener
 import android.view.Surface
@@ -17,20 +20,33 @@ import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.camera.core.CameraSelector
 import androidx.camera.core.ImageCapture
+import androidx.camera.core.ImageCaptureException
 import androidx.camera.core.Preview
 import androidx.camera.lifecycle.ProcessCameraProvider
+import com.example.foodiefy.R
 import com.example.foodiefy.databinding.ActivityMainBinding
+import java.io.File
+import java.text.SimpleDateFormat
+import java.util.Locale
 
 class ScanFoodActivity : AppCompatActivity() {
     private lateinit var binding: ActivityScanFoodBinding
     private var cameraSelector: CameraSelector = CameraSelector.DEFAULT_BACK_CAMERA
     private var imageCapture: ImageCapture? = null
 
+    // Define the directory where images will be saved
+    private lateinit var outputDirectory: File
+
+    private var isImageCaptured = false // Track if an image has already been captured
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         binding = ActivityScanFoodBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        // Initialize output directory
+        outputDirectory = getOutputDirectory()
 
         binding.switchCamera.setOnClickListener {
             cameraSelector =
@@ -44,6 +60,14 @@ class ScanFoodActivity : AppCompatActivity() {
         super.onResume()
         hideSystemUI()
         startCamera()
+
+        // Automatically capture image after a short delay (for example, 3 seconds)
+        Handler(Looper.getMainLooper()).postDelayed({
+            if (!isImageCaptured) {
+                captureImage()
+                isImageCaptured = true // Ensure we don't capture multiple images
+            }
+        }, 3000)
     }
 
     private fun startCamera() {
@@ -57,12 +81,16 @@ class ScanFoodActivity : AppCompatActivity() {
                     it.setSurfaceProvider(binding.viewFinder.surfaceProvider)
                 }
 
+            // Initialize imageCapture for taking photos
+            imageCapture = ImageCapture.Builder().build()
+
             try {
                 cameraProvider.unbindAll()
                 cameraProvider.bindToLifecycle(
                     this,
                     cameraSelector,
-                    preview
+                    preview,
+                    imageCapture
                 )
             } catch (exc: Exception) {
                 Toast.makeText(
@@ -107,6 +135,48 @@ class ScanFoodActivity : AppCompatActivity() {
         }
     }
 
+    private fun captureImage() {
+        val imageCapture = imageCapture ?: return
+
+        val photoFile = File(
+            outputDirectory,
+            SimpleDateFormat(
+                FILENAME_FORMAT, Locale.US
+            ).format(System.currentTimeMillis()) + ".jpg"
+        )
+
+        val outputOptions = ImageCapture.OutputFileOptions.Builder(photoFile).build()
+
+        imageCapture.takePicture(
+            outputOptions, ContextCompat.getMainExecutor(this),
+            object : ImageCapture.OnImageSavedCallback {
+                override fun onError(exc: ImageCaptureException) {
+                    Log.e(TAG, "Photo capture failed: ${exc.message}", exc)
+                }
+
+                override fun onImageSaved(output: ImageCapture.OutputFileResults) {
+                    val savedUri = Uri.fromFile(photoFile)
+                    Log.d(TAG, "Photo capture succeeded: $savedUri")
+
+                    // Pass the captured image URI to a new activity
+                    val intent = Intent(this@ScanFoodActivity, DetailFoodActivity::class.java)
+                    intent.putExtra("imageUri", savedUri.toString())
+                    startActivity(intent)
+                }
+            }
+        )
+    }
+
+    // Get the directory where files will be saved
+    private fun getOutputDirectory(): File {
+        val mediaDir = externalMediaDirs.firstOrNull()?.let {
+            File(it, resources.getString(R.string.app_name)).apply { mkdirs() }
+        }
+        return if (mediaDir != null && mediaDir.exists())
+            mediaDir else filesDir
+    }
+
+
     override fun onStart() {
         super.onStart()
         orientationEventListener.enable()
@@ -119,5 +189,6 @@ class ScanFoodActivity : AppCompatActivity() {
 
     companion object {
         private const val TAG = "CameraActivity"
+        private const val FILENAME_FORMAT = "yyyy-MM-dd-HH-mm-ss-SSS"
     }
 }
