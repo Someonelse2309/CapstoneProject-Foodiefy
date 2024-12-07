@@ -17,6 +17,9 @@
         android:theme="@style/Theme.Foodiefy"
         tools:targetApi="31">
         <activity
+            android:name=".ui.scan.scanFood.DetailFoodActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.scan.scanIngredient.ScanIngredientsActivity"
             android:exported="false" />
         <activity
