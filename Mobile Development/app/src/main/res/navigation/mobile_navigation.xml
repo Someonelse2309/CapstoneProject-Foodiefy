@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@+id/navigation_welcome">
 
     <fragment
         android:id="@+id/navigation_home"
@@ -58,4 +58,94 @@
         android:name="com.example.foodiefy.ui.setting.TermsFragment"
         android:label="@string/title_TC"
         tools:layout="@layout/fragment_terms" />
+
+    <fragment
+        android:id="@+id/navigation_awal"
+        android:name="com.example.foodiefy.ui.awal.AwalFragment"
+        android:label="@string/title_awal"
+        tools:layout="@layout/fragment_awal">
+        <action
+            android:id="@+id/action_awalFragment_to_signInFragment"
+            app:destination="@id/navigation_signIn" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_signIn"
+        android:name="com.example.foodiefy.ui.signin.SignInFragment"
+        android:label="@string/title_signIn"
+        tools:layout="@layout/fragment_sign_in">
+        <action
+            android:id="@+id/action_navigation_signIn_to_navigation_signUp"
+            app:destination="@id/navigation_signUp" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_signUp"
+        android:name="com.example.foodiefy.ui.signup.SignUpFragment"
+        android:label="titile_signup"
+        tools:layout="@layout/fragment_sign_up">
+        <action
+            android:id="@+id/action_navigation_signUp_to_navigation_signIn"
+            app:destination="@+id/navigation_signIn" />"
+        <action
+            android:id="@+id/action_awalFragment_to_welcomeFragment"
+            app:destination="@+id/navigation_welcome" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_welcome"
+        android:name="com.example.foodiefy.ui.welcome.WelcomeFragment"
+        android:label="@string/title_welcome"
+        tools:layout="@layout/fragment_welcome">
+        <action
+            android:id="@+id/action_navigation_welcome_to_navigation_gender"
+            app:destination="@id/navigation_gender" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_gender"
+        android:name="com.example.foodiefy.ui.gender.GenderFragment"
+        android:label="@string/title_gender"
+        tools:layout="@layout/fragment_gender">
+        <action
+            android:id="@+id/action_navigation_gender_to_navigation_age"
+            app:destination="@+id/navigation_age" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_age"
+        android:name="com.example.foodiefy.ui.age.AgeFragment"
+        android:label="@string/title_age"
+        tools:layout="@layout/fragment_age">
+        <action
+            android:id="@+id/action_navigation_age_to_navigation_weight"
+            app:destination="@+id/navigation_weight" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_weight"
+        android:name="com.example.foodiefy.ui.weight.WeightFragment"
+        android:label="@string/title_weight"
+        tools:layout="@layout/fragment_weight">
+        <action
+            android:id="@+id/action_navigation_weight_to_navigation_height"
+            app:destination="@+id/navigation_height" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_height"
+        android:name="com.example.foodiefy.ui.height.HeightFragment"
+        android:label="@string/title_height"
+        tools:layout="@layout/fragment_height">
+        <action
+            android:id="@+id/action_navigation_height_to_navigation_activity"
+            app:destination="@+id/navigation_activity" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_activity"
+        android:name="com.example.foodiefy.ui.activity.ActivityFragment"
+        android:label="@string/title_activity"
+        tools:layout="@layout/fragment_activity">
+        <action
+            android:id="@+id/action_navigation_activity_to_navigation_home"
+            app:destination="@+id/navigation_home" />
+    </fragment>
 </navigation>
