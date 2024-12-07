@@ -98,23 +98,44 @@
         android:layout_marginTop="20dp"/>
 
     <!-- Email Input Field -->
+<!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        android:id="@+id/editEmail"-->
+<!--        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="@dimen/input_margin"-->
+<!--        android:layout_marginEnd="@dimen/input_margin"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/emailText">-->
+
+<!--        <com.google.android.material.textfield.TextInputEditText-->
+<!--            android:id="@+id/emailEdit"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="@string/hint_email"-->
+<!--            android:inputType="textEmailAddress"-->
+<!--            tools:ignore="SpeakableTextPresentCheck"/>-->
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
+
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/editEmail"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/input_margin"
-        android:layout_marginEnd="@dimen/input_margin"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="21dp"
+        android:layout_marginEnd="21dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/emailText">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/emailEdit"
+            android:id="@+id/emailEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/hint_email"
-            android:inputType="textEmailAddress" />
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            tools:ignore="SpeakableTextPresentCheck" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <!-- Password Input Label -->
@@ -132,6 +153,26 @@
         app:layout_constraintStart_toStartOf="parent"/>
 
     <!-- Password Input Field -->
+<!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        android:id="@+id/editPassword"-->
+<!--        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="21dp"-->
+<!--        android:layout_marginEnd="21dp"-->
+<!--        android:hint="@string/hint_pass"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/password_text"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent">-->
+
+<!--        <com.google.android.material.textfield.TextInputEditText-->
+<!--            android:id="@+id/passwordEdit"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="48dp"-->
+<!--            android:inputType="textPassword"-->
+<!--            tools:ignore="SpeakableTextPresentCheck"/>-->
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
+
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/editPassword"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -139,16 +180,17 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="21dp"
         android:layout_marginEnd="21dp"
-        android:hint="@string/hint_pass"
-        app:layout_constraintTop_toBottomOf="@+id/password_text"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/password_text">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/passwordEdit"
+            android:id="@+id/passwordEditText"
             android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:inputType="textPassword" />
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            tools:ignore="SpeakableTextPresentCheck" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <!-- Remember Me Checkbox -->
