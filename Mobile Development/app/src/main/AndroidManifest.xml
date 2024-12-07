@@ -17,8 +17,15 @@
         android:theme="@style/Theme.Foodiefy"
         tools:targetApi="31">
         <activity
-            android:name=".ui.scan.scanFood.DetailFoodActivity"
-            android:exported="false" />
+            android:name=".ui.splash.SplashScreenActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".ui.scan.scanIngredient.ScanIngredientsActivity"
             android:exported="false" />
@@ -29,11 +36,6 @@
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 

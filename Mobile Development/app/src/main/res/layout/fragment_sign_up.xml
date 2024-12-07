@@ -97,13 +97,13 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/editNama"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="21dp"
         android:layout_marginTop="0dp"
         android:layout_marginStart="20dp"
         app:layout_constraintEnd_toEndOf="parent"
+        android:hint="@string/hint_name"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textNama">
 
@@ -131,7 +131,6 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/editNomor"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="21dp"
@@ -139,13 +138,14 @@
         android:layout_marginStart="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        android:hint="@string/hint_phone"
         app:layout_constraintTop_toBottomOf="@+id/textNomor">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/editNomor2"
             android:layout_width="match_parent"
             android:layout_height="48dp"
-            android:inputType="textEmailAddress"
+            android:inputType="number"
             tools:ignore="SpeakableTextPresentCheck"  />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -167,7 +167,6 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/editEmail"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="21dp"
@@ -175,6 +174,7 @@
         android:layout_marginStart="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        android:hint="@string/hint_email"
         app:layout_constraintTop_toBottomOf="@+id/emailText">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -202,7 +202,6 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/editPassword"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="21dp"
@@ -210,6 +209,7 @@
         android:layout_marginStart="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        android:hint="@string/hint_pass"
         app:layout_constraintTop_toBottomOf="@+id/passwordText">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -237,7 +237,6 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/editConfirmPass"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="21dp"
@@ -245,13 +244,14 @@
         android:layout_marginStart="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        android:hint="@string/hint_confirm_pass"
         app:layout_constraintTop_toBottomOf="@+id/confirmpassText">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/editConfirmPass2"
             android:layout_width="match_parent"
             android:layout_height="48dp"
-            android:inputType="textEmailAddress"
+            android:inputType="textPassword"
             tools:ignore="SpeakableTextPresentCheck"  />
     </com.google.android.material.textfield.TextInputLayout>
 

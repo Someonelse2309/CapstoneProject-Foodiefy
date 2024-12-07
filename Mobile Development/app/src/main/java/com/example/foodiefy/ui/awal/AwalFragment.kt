@@ -1,53 +1,106 @@
 package com.example.foodiefy.ui.awal
 
+import android.animation.Animator
+import android.animation.AnimatorListenerAdapter
+import android.animation.ObjectAnimator
+import android.annotation.SuppressLint
 import android.os.Bundle
-import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
+import android.util.Log
+import android.view.GestureDetector
+import android.view.MotionEvent
 import android.view.View
-import android.view.ViewGroup
+import android.widget.TextView
+import androidx.fragment.app.Fragment
 import com.example.foodiefy.R
+import com.example.foodiefy.ui.signin.SignInFragment
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
 
-/**
- * A simple [Fragment] subclass.
- * Use the [AwalFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
-class AwalFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
+class AwalFragment : Fragment(R.layout.fragment_awal) {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
+    private lateinit var lanjut: TextView
+    private lateinit var gestureDetector: GestureDetector
+    private var isAnimating = false
+
+    @SuppressLint("ClickableViewAccessibility")
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        Log.d("AwalFragment", "Tampilan AwalFragment berhasil dibuat")
+
+        // Inisialisasi TextView untuk "lanjut"
+        lanjut = view.findViewById(R.id.lanjut)
+
+        // Menambahkan GestureDetector untuk mendeteksi gerakan swipe
+        gestureDetector = GestureDetector(requireContext(), object : GestureDetector.SimpleOnGestureListener() {
+            override fun onFling(
+                e1: MotionEvent?, e2: MotionEvent,
+                velocityX: Float, velocityY: Float
+            ): Boolean {
+                if (isAnimating) {
+                    Log.d("AwalFragment", "Swipe diabaikan karena animasi sedang berlangsung")
+                    return false
+                }
+
+                if (e1 != null) {
+                    val deltaX = e2.x - e1.x
+                    val deltaY = e2.y - e1.y
+
+                    Log.d("AwalFragment", "Fling detected: deltaX=$deltaX, deltaY=$deltaY")
+
+                    if (Math.abs(deltaY) > Math.abs(deltaX) && deltaY < 0) {
+                        if (Math.abs(deltaY) > SWIPE_THRESHOLD) {
+                            Log.d("AwalFragment", "Swipe up valid, memulai animasi")
+                            animateSwipeUp()
+                            return true
+                        } else {
+                            Log.d("AwalFragment", "Swipe terlalu pendek, tidak memenuhi SWIPE_THRESHOLD")
+                        }
+                    } else {
+                        Log.d("AwalFragment", "Gesture bukan swipe up")
+                    }
+                }
+                return false
+            }
+        })
+
+        // Menambahkan TouchListener untuk mendeteksi gerakan swipe pada TextView
+        lanjut.setOnTouchListener { _, event ->
+            gestureDetector.onTouchEvent(event)
+            true
         }
     }
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_awal, container, false)
+    private fun animateSwipeUp() {
+        Log.d("AwalFragment", "Animasi Swipe Up Dimulai")
+        isAnimating = true
+
+        val animator = ObjectAnimator.ofFloat(lanjut, "translationY", 0f, -150f)
+        animator.duration = 1000
+        animator.start()
+
+        animator.addListener(object : AnimatorListenerAdapter() {
+            override fun onAnimationEnd(animation: Animator) {
+                super.onAnimationEnd(animation)
+                Log.d("AwalFragment", "Animasi Swipe Up Selesai")
+                isAnimating = false
+
+                try {
+                    val fragmentTransaction = parentFragmentManager.beginTransaction()
+                    fragmentTransaction.replace(R.id.fragment_container, SignInFragment())
+                    fragmentTransaction.addToBackStack(null)
+                    fragmentTransaction.commit()
+                    Log.d("AwalFragment", "Fragment berhasil diganti ke SignInFragment")
+                } catch (e: Exception) {
+                    Log.e("AwalFragment", "Gagal mengganti fragment: ${e.message}", e)
+                }
+            }
+        })
     }
 
     companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment AwalFragment.
-         */
-        // TODO: Rename and change types and number of parameters
+        const val SWIPE_THRESHOLD = 150
+
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
             AwalFragment().apply {

@@ -1,5 +1,4 @@
 <resources>
-    <string name="app_name">Foodiefy</string>
     <string name="title_home">Home</string>
     <string name="title_history">History</string>
     <string name="title_ai">FOODIEF-AI</string>
@@ -63,5 +62,20 @@
     <string name="text_height">What’s your current height right now?</string>
     <string name="no_favorite">Tidak ada favorite</string>
     <string name="text_activity">What’s your activity intensity?</string>
-    <string name="image_classifier_failed">Image classifier failed to initialize. See error logs for details</string>
+    <string name="app_name">Foodiefy</string>
+    <string name="title_awal">Awal</string>
+    <string name="lanjut">Swipe Up For Next Page</string>
+    <string name="title_signIn">Sign In</string>
+    <string name="title_welcome">Welcome</string>
+    <string name="title_gender">Gender</string>
+    <string name="title_age">Age</string>
+    <string name="title_weight">Weight</string>
+    <string name="title_height">Height</string>
+    <string name="title_activity">Activity Intensity</string>
+    <string name="hint_email">Enter your email</string>
+    <string name="hint_pass">Enter your password</string>
+    <string name="emailtext">aaaaaaaaaa</string>
+    <string name="hint_name">Enter your full name</string>
+    <string name="hint_phone">Enter your phone number</string>
+    <string name="hint_confirm_pass">Enter your password again</string>
 </resources>
