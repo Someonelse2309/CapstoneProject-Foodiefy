@@ -75,4 +75,7 @@
     <string name="hint_email">Enter your email</string>
     <string name="hint_pass">Enter your password</string>
     <string name="emailtext">aaaaaaaaaa</string>
+    <string name="hint_name">Enter your full name</string>
+    <string name="hint_phone">Enter your phone number</string>
+    <string name="hint_confirm_pass">Enter your password again</string>
 </resources>
