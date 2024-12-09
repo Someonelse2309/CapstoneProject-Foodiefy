@@ -1,1 +1,8 @@
 di folder yg sama masukin food_classifier.keras
+
+cara jalanin
+.\venv\Scripts\activate (supaya depedensi pisah sama python yg uda keinstall di lappy)
+pip install tensorflow
+pip install flask
+pip install Pillow
+python app.py atau flask run
