@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_welcome">
+    app:startDestination="@+id/navigation_home">
 
     <fragment
         android:id="@+id/navigation_home"
@@ -80,7 +80,7 @@
     <fragment
         android:id="@+id/navigation_signUp"
         android:name="com.example.foodiefy.ui.signup.SignUpFragment"
-        android:label="titile_signup"
+        android:label="title_signup"
         tools:layout="@layout/fragment_sign_up">
         <action
             android:id="@+id/action_navigation_signUp_to_navigation_signIn"
