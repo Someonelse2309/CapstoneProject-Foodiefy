@@ -18,6 +18,7 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.foodiefy.databinding.ActivityMainBinding
 import com.example.foodiefy.ui.scan.scanFood.ScanFoodActivity
+import com.example.foodiefy.ui.scan.scanIngredient.ScanIngredientsActivity
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class MainActivity : AppCompatActivity() {
@@ -58,11 +59,11 @@ class MainActivity : AppCompatActivity() {
         }
 
         fabFood.setOnClickListener {
-            startCameraX()
+            startCameraXFood()
         }
 
         fabIngredients.setOnClickListener {
-            startCameraX()
+            startCameraXIngredients()
         }
 
         blurOverlay.setOnClickListener {
@@ -112,8 +113,13 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun startCameraX() {
+    private fun startCameraXFood() {
         val intent = Intent(this, ScanFoodActivity::class.java)
+        startActivity(intent)
+    }
+
+    private fun startCameraXIngredients() {
+        val intent = Intent(this, ScanIngredientsActivity::class.java)
         startActivity(intent)
     }
 
