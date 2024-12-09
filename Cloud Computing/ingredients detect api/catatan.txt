@@ -1,6 +1,7 @@
-di folder yg sama masukin food_classifier.keras
+di folder yg sama masukin ingredients_classifier.keras (ada di drive kulkas)
 
 cara jalanin
+python -m venv venv
 .\venv\Scripts\activate (supaya depedensi pisah sama python yg uda keinstall di lappy)
 pip install tensorflow
 pip install flask
