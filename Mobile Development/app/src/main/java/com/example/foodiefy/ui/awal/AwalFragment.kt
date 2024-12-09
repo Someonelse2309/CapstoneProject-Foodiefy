@@ -11,6 +11,7 @@ import android.view.MotionEvent
 import android.view.View
 import android.widget.TextView
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.example.foodiefy.R
 import com.example.foodiefy.ui.signin.SignInFragment
 
@@ -86,11 +87,8 @@ class AwalFragment : Fragment(R.layout.fragment_awal) {
                 isAnimating = false
 
                 try {
-                    val fragmentTransaction = parentFragmentManager.beginTransaction()
-                    fragmentTransaction.replace(R.id.fragment_container, SignInFragment())
-                    fragmentTransaction.addToBackStack(null)
-                    fragmentTransaction.commit()
-                    Log.d("AwalFragment", "Fragment berhasil diganti ke SignInFragment")
+                    val navController = findNavController()
+                    navController.navigate(R.id.action_awalFragment_to_signInFragment)
                 } catch (e: Exception) {
                     Log.e("AwalFragment", "Gagal mengganti fragment: ${e.message}", e)
                 }

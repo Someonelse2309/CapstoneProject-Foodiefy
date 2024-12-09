@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/awalFragment">
+
+    <fragment
+        android:id="@+id/awalFragment"
+        android:name="com.example.foodiefy.ui.awal.AwalFragment"
+        android:label="Awal"
+        tools:layout="@layout/fragment_awal">
+        <action
+            android:id="@+id/action_awalFragment_to_signInFragment"
+            app:destination="@id/signInFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.example.foodiefy.ui.signin.SignInFragment"
+        android:label="Sign In"
+        tools:layout="@layout/fragment_sign_in">
+        <action
+            android:id="@+id/action_signInFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.example.foodiefy.ui.signup.SignUpFragment"
+        android:label="Sign Up"
+        tools:layout="@layout/fragment_sign_up">
+    <action
+        android:id="@+id/action_signUpFragment_to_signInFragment"
+        app:destination="@id/signInFragment" />
+    </fragment>
+</navigation>

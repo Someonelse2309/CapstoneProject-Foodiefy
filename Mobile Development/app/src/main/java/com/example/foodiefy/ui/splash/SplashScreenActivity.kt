@@ -1,5 +1,6 @@
 package com.example.foodiefy.ui.splash
 
+import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
@@ -7,8 +8,11 @@ import android.util.Log
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import androidx.navigation.findNavController
+import androidx.navigation.ui.setupWithNavController
 import com.example.foodiefy.R
 import com.example.foodiefy.ui.awal.AwalFragment
+import com.example.foodiefy.ui.awal.SebelumAwalActivity
 
 class SplashScreenActivity : AppCompatActivity() {
 
@@ -16,25 +20,12 @@ class SplashScreenActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash_screen)
 
-        // Delay selama 3 detik menggunakan Handler
+        // Durasi splash screen (3 detik)
         Handler(Looper.getMainLooper()).postDelayed({
-            // Log untuk memastikan fungsi dipanggil setelah 3 detik
-            Log.d("SplashScreen", "3 detik selesai, mencoba mengganti fragment...")
-
-            // Sembunyikan splash layout
-            val splashLayout = findViewById<View>(R.id.splash_layout)
-            splashLayout.visibility = View.GONE
-            Log.d("SplashScreen", "Splash layout disembunyikan.")
-
-            // Tampilkan fragment container
-            val fragmentContainer = findViewById<View>(R.id.fragment_container)
-            fragmentContainer.visibility = View.VISIBLE
-            Log.d("SplashScreen", "Fragment container ditampilkan.")
-
-            // Panggil fungsi untuk mengganti fragment
-            loadFragment(AwalFragment())
-            Log.d("SplashScreen", "Fungsi loadFragment dipanggil.")
-        }, 3000)
+            val intent = Intent(this, SebelumAwalActivity::class.java)
+            startActivity(intent)
+            finish()  // Agar tidak bisa kembali ke splash screen
+        }, 3000)  // Durasi dalam milidetik
     }
 
     // Fungsi untuk mengganti fragment
