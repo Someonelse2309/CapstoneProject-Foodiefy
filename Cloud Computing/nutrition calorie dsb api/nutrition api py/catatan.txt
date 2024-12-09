@@ -1,0 +1,1 @@
+di folder yg sama masukin food_classifier.keras
