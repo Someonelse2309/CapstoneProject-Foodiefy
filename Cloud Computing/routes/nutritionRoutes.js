@@ -1,10 +1,14 @@
-const express = require('express');
+const express = require("express");
 const router = express.Router();
-const { verifyToken } = require('../middleware/authMiddleware');
-const { getToday, addMeal, getHistory } = require('../controllers/nutritionController');
+const authMiddleware = require("../middleware/authMiddleware");
+const {
+  getToday,
+  addMeal,
+  getHistory,
+} = require("../controllers/nutritionControllerr");
 
-router.get('/today', verifyToken, getToday);
-router.post('/add', verifyToken, addMeal);
-router.get('/history', verifyToken, getHistory);
+router.get("/today", authMiddleware, getToday);
+router.post("/add", authMiddleware, addMeal);
+router.get("/history", authMiddleware, getHistory);
 
 module.exports = router;

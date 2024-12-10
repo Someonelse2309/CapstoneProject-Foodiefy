@@ -16,7 +16,7 @@ module.exports = (req, res, next) => {
   try {
     // Verify the token
     const decoded = jwt.verify(token, process.env.JWT_SECRET);
-    req.userId = decoded.userId; // Ensure your token contains a `userId` field
+    req.uid = decoded.userId; // Change this line to use req.uid instead of req.userId
     next(); // Call the next middleware or route handler
   } catch (err) {
     // Handle invalid or expired tokens
@@ -24,20 +24,3 @@ module.exports = (req, res, next) => {
     res.status(401).json({ message: isExpired ? "Token expired" : "Invalid token" });
   }
 };
-
-
-// const jwt = require("jsonwebtoken");
-
-// module.exports = (req, res, next) => {
-//   const token = req.headers.authorization;
-
-//   if (!token) return res.status(401).send({ message: "No token provided" });
-
-//   try {
-//     const decoded = jwt.verify(token, process.env.JWT_SECRET);
-//     req.userId = decoded.userId;
-//     next();
-//   } catch (err) {
-//     res.status(401).send({ message: "Invalid token" });
-//   }
-// };
