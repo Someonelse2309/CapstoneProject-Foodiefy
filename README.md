@@ -50,6 +50,8 @@ https://www.kaggle.com/datasets/kmader/food41?select=images
 * Object Detection model dataset - 55% Test Accuracy & 0.3106 Loss
 
 ## Cloud Computing Learning Path
+### Architecture 
+<img src="https://raw.githubusercontent.com/Someonelse2309/CapstoneProject-Foodiefy/main/Cloud%20Computing/Architecture.png" width="auto" height=350>
 
 ## Mobile Development Learning Path 
 ### Steps
