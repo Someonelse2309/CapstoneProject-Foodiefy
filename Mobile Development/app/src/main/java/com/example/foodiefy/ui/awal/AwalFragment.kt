@@ -10,6 +10,7 @@ import android.view.GestureDetector
 import android.view.MotionEvent
 import android.view.View
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.foodiefy.R
@@ -28,6 +29,8 @@ class AwalFragment : Fragment(R.layout.fragment_awal) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         Log.d("AwalFragment", "Tampilan AwalFragment berhasil dibuat")
+
+        (activity as? AppCompatActivity)?.supportActionBar?.hide()
 
         // Inisialisasi TextView untuk "lanjut"
         lanjut = view.findViewById(R.id.lanjut)

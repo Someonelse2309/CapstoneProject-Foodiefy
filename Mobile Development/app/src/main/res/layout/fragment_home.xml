@@ -51,30 +51,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <View
-        android:id="@+id/favorite"
-        android:layout_width="35dp"
-        android:layout_height="35dp"
-        android:background="@drawable/ic_favorite"
-        android:layout_marginEnd="15dp"
-        app:layout_constraintEnd_toStartOf="@+id/notif"
-        app:layout_constraintTop_toTopOf="@+id/notif" />
-
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/garis1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_begin="110dp" />
-
-    <ImageView
-        android:id="@+id/wajan"
-        android:layout_width="130dp"
-        android:layout_height="130dp"
-        android:layout_marginStart="-30dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/garis1"
-        tools:srcCompat="@drawable/wajan" />
 
     <TextView
         android:id="@+id/todayCalorie"
@@ -227,15 +209,5 @@
         app:layout_constraintEnd_toEndOf="@+id/bg_home"
         app:layout_constraintStart_toStartOf="@+id/bg_home"
         app:layout_constraintTop_toTopOf="@+id/bg_home" />
-
-    <ImageView
-        android:id="@+id/kiwi"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_marginBottom="80dp"
-        android:layout_marginEnd="-20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:srcCompat="@drawable/kiwi" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -36,13 +36,6 @@ class HomeFragment : Fragment() {
             .circleCrop()
             .into(binding.profileImage)
 
-        Glide.with(this)
-            .load(R.drawable.wajan)
-            .into(binding.wajan)
-
-        Glide.with(this)
-            .load(R.drawable.kiwi)
-            .into(binding.kiwi)
 
         return root
     }

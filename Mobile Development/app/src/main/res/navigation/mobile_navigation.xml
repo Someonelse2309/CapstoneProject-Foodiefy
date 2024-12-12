@@ -14,7 +14,7 @@
     <fragment
         android:id="@+id/navigation_ai"
         android:name="com.example.foodiefy.ui.ai.AIFragment"
-        android:label="@string/title_ai"
+        android:label="@string/title_favorite"
         tools:layout="@layout/fragment_ai" />
 
     <fragment
