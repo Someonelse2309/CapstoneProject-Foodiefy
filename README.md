@@ -61,44 +61,37 @@ https://www.kaggle.com/datasets/kmader/food41?select=images
 4. Run and debugging the project on your AVD emulator
 
 ### App Screenshots
-1. Onboarding Page <br> <br>
-   <img src="https://raw.githubusercontent.com/Someonelse2309/CapstoneProject-Foodiefy/main/Mobile%20Development/Assets/1.png" width="auto" height=350> 
-   <img src="https://raw.githubusercontent.com/Someonelse2309/CapstoneProject-Foodiefy/main/Mobile%20Development/Assets/2.png" width="auto" height=350> <br> <br>
-2. Sign In and Sign Up Page <br> <br>
+1. Authentication/Registration Page <br> <br>
    <img src="https://raw.githubusercontent.com/Someonelse2309/CapstoneProject-Foodiefy/main/Mobile%20Development/Assets/3.png" width="auto" height=350>
-   <img src="https://raw.githubusercontent.com/Someonelse2309/CapstoneProject-Foodiefy/main/Mobile%20Development/Assets/4.png" width="auto" height=350> <br> <br>
-3. Welcoming Page (?) <br> <br>
-   <img src="https://raw.githubusercontent.com/Someonelse2309/CapstoneProject-Foodiefy/main/Mobile%20Development/Assets/5.png" width="auto" height=350>
+   <img src="https://raw.githubusercontent.com/Someonelse2309/CapstoneProject-Foodiefy/main/Mobile%20Development/Assets/4.png" width="auto" height=350>
+   <img src="https://raw.githubusercontent.com/Someonelse2309/CapstoneProject-Foodiefy/main/Mobile%20Development/Assets/5.png" width="auto" height=350> <br> <br>
+2. Body Metrics Page <br> <br>
    <img src="https://raw.githubusercontent.com/Someonelse2309/CapstoneProject-Foodiefy/main/Mobile%20Development/Assets/6.png" width="auto" height=350>
-   <img src="https://raw.githubusercontent.com/Someonelse2309/CapstoneProject-Foodiefy/main/Mobile%20Development/Assets/7.png" width="auto" height=350> <br> <br>
-   <img src="https://raw.githubusercontent.com/Someonelse2309/CapstoneProject-Foodiefy/main/Mobile%20Development/Assets/8.png" width="auto" height=350> 
+   <img src="https://raw.githubusercontent.com/Someonelse2309/CapstoneProject-Foodiefy/main/Mobile%20Development/Assets/7.png" width="auto" height=350>
+   <img src="https://raw.githubusercontent.com/Someonelse2309/CapstoneProject-Foodiefy/main/Mobile%20Development/Assets/8.png" width="auto" height=350> <br>
    <img src="https://raw.githubusercontent.com/Someonelse2309/CapstoneProject-Foodiefy/main/Mobile%20Development/Assets/9.png" width="auto" height=350>
-   <img src="https://raw.githubusercontent.com/Someonelse2309/CapstoneProject-Foodiefy/main/Mobile%20Development/Assets/10.png" width="auto" height=350> <br> <br>
+   <img src="https://raw.githubusercontent.com/Someonelse2309/CapstoneProject-Foodiefy/main/Mobile%20Development/Assets/10.png" width="auto" height=350>
    <img src="https://raw.githubusercontent.com/Someonelse2309/CapstoneProject-Foodiefy/main/Mobile%20Development/Assets/11.png" width="auto" height=350> <br> <br>
-4. Main Page <br> <br>
+3. Dashboard Page <br> <br>
    <img src="https://raw.githubusercontent.com/Someonelse2309/CapstoneProject-Foodiefy/main/Mobile%20Development/Assets/12.png" width="auto" height=350>
    <img src="https://raw.githubusercontent.com/Someonelse2309/CapstoneProject-Foodiefy/main/Mobile%20Development/Assets/13.png" width="auto" height=350> 
-   <img src="https://raw.githubusercontent.com/Someonelse2309/CapstoneProject-Foodiefy/main/Mobile%20Development/Assets/15.png" width="auto" height=350> <br> <br>
-   <img src="https://raw.githubusercontent.com/Someonelse2309/CapstoneProject-Foodiefy/main/Mobile%20Development/Assets/19.png" width="auto" height=350> 
-   <img src="https://raw.githubusercontent.com/Someonelse2309/CapstoneProject-Foodiefy/main/Mobile%20Development/Assets/20.png" width="auto" height=350> 
-   <img src="https://raw.githubusercontent.com/Someonelse2309/CapstoneProject-Foodiefy/main/Mobile%20Development/Assets/25.png" width="auto" height=350> <br> <br>
-5. Food and Ingredients Scan <br> <br>
-   <img src="https://raw.githubusercontent.com/Someonelse2309/CapstoneProject-Foodiefy/main/Mobile%20Development/Assets/14.png" width="auto" height=350> 
-   <img src="https://raw.githubusercontent.com/Someonelse2309/CapstoneProject-Foodiefy/main/Mobile%20Development/Assets/21.png" width="auto" height=350> 
-   <img src="https://raw.githubusercontent.com/Someonelse2309/CapstoneProject-Foodiefy/main/Mobile%20Development/Assets/22.png" width="auto" height=350> <br> <br>
-6. Nutrition and Calories Page <br> <br>
+   <img src="https://raw.githubusercontent.com/Someonelse2309/CapstoneProject-Foodiefy/main/Mobile%20Development/Assets/19.png" width="auto" height=350> <br>
+   <img src="https://raw.githubusercontent.com/Someonelse2309/CapstoneProject-Foodiefy/main/Mobile%20Development/Assets/20.png" width="auto" height=350> <br> <br>
+4. Scan Food Page <br> <br>
+   <img src="https://raw.githubusercontent.com/Someonelse2309/CapstoneProject-Foodiefy/main/Mobile%20Development/Assets/14.png" width="auto" height=350>
    <img src="https://raw.githubusercontent.com/Someonelse2309/CapstoneProject-Foodiefy/main/Mobile%20Development/Assets/15.png" width="auto" height=350>
-   <img src="https://raw.githubusercontent.com/Someonelse2309/CapstoneProject-Foodiefy/main/Mobile%20Development/Assets/16.png" width="auto" height=350>
-   <img src="https://raw.githubusercontent.com/Someonelse2309/CapstoneProject-Foodiefy/main/Mobile%20Development/Assets/17.png" width="auto" height=350> <br> <br>
+   <img src="https://raw.githubusercontent.com/Someonelse2309/CapstoneProject-Foodiefy/main/Mobile%20Development/Assets/16.png" width="auto" height=350> <br>
+   <img src="https://raw.githubusercontent.com/Someonelse2309/CapstoneProject-Foodiefy/main/Mobile%20Development/Assets/17.png" width="auto" height=350>
    <img src="https://raw.githubusercontent.com/Someonelse2309/CapstoneProject-Foodiefy/main/Mobile%20Development/Assets/18.png" width="auto" height=350> <br> <br>
-7. Recipe Page <br> <br>
-   <img src="https://raw.githubusercontent.com/Someonelse2309/CapstoneProject-Foodiefy/main/Mobile%20Development/Assets/23.png" width="auto" height=350>
+5. Scan Ingredients Page <br> <br>
+   <img src="https://raw.githubusercontent.com/Someonelse2309/CapstoneProject-Foodiefy/main/Mobile%20Development/Assets/21.png" width="auto" height=350>
+   <img src="https://raw.githubusercontent.com/Someonelse2309/CapstoneProject-Foodiefy/main/Mobile%20Development/Assets/22.png" width="auto" height=350>
+   <img src="https://raw.githubusercontent.com/Someonelse2309/CapstoneProject-Foodiefy/main/Mobile%20Development/Assets/23.png" width="auto" height=350> <br>
    <img src="https://raw.githubusercontent.com/Someonelse2309/CapstoneProject-Foodiefy/main/Mobile%20Development/Assets/24.png" width="auto" height=350> <br> <br>
-8. Favourite and History Page <br> <br>
-   <img src="https://raw.githubusercontent.com/Someonelse2309/CapstoneProject-Foodiefy/main/Mobile%20Development/Assets/26.png" width="auto" height=350> 
-   <img src="https://raw.githubusercontent.com/Someonelse2309/CapstoneProject-Foodiefy/main/Mobile%20Development/Assets/27.png" width="auto" height=350> <br> <br>
-9.  Notifications and Settings Page <br> <br>
-    <img src="https://raw.githubusercontent.com/Someonelse2309/CapstoneProject-Foodiefy/main/Mobile%20Development/Assets/28.png" width="auto" height=350>
-    <img src="https://raw.githubusercontent.com/Someonelse2309/CapstoneProject-Foodiefy/main/Mobile%20Development/Assets/29.png" width="auto" height=350> <br> <br>
-10. Profile Page <br> <br>
-    <img src="https://raw.githubusercontent.com/Someonelse2309/CapstoneProject-Foodiefy/main/Mobile%20Development/Assets/30.png" width="auto" height=350>
+6. Favourite Recipe, History, and Notification Page <br> <br>
+   <img src="https://raw.githubusercontent.com/Someonelse2309/CapstoneProject-Foodiefy/main/Mobile%20Development/Assets/26.png" width="auto" height=350>
+   <img src="https://raw.githubusercontent.com/Someonelse2309/CapstoneProject-Foodiefy/main/Mobile%20Development/Assets/27.png" width="auto" height=350>
+   <img src="https://raw.githubusercontent.com/Someonelse2309/CapstoneProject-Foodiefy/main/Mobile%20Development/Assets/28.png" width="auto" height=350> <br> <br>
+7. Settings Page <br> <br>
+   <img src="https://raw.githubusercontent.com/Someonelse2309/CapstoneProject-Foodiefy/main/Mobile%20Development/Assets/29.png" width="auto" height=350>
+   <img src="https://raw.githubusercontent.com/Someonelse2309/CapstoneProject-Foodiefy/main/Mobile%20Development/Assets/30.png" width="auto" height=350>
