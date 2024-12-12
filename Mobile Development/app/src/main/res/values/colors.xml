@@ -14,4 +14,5 @@
     <color name="yellow">#F8D558</color>
     <color name="orange">#EDA087</color>
     <color name="blue">#67A6BD</color>
+    <color name="bounding_box_color">#FF9800</color>
 </resources>

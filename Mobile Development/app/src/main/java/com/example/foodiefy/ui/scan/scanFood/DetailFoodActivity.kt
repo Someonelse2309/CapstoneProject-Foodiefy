@@ -37,7 +37,6 @@ class DetailFoodActivity : AppCompatActivity() {
         binding.foodName.text = classificationResult
 
         val imageUri = intent.getStringExtra("imageUri")
-
         if (imageUri != null) {
             Glide.with(this)
                 .load(Uri.parse(imageUri))
@@ -46,18 +45,8 @@ class DetailFoodActivity : AppCompatActivity() {
         } else {
             Log.e("DetailFoodActivity", "Image URI is null!")
         }
-
 //        checkStoragePermissions()
     }
-
-//    private fun checkStoragePermissions() {
-//        if (ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE)
-//            != PackageManager.PERMISSION_GRANTED) {
-//            ActivityCompat.requestPermissions(this,
-//                arrayOf(Manifest.permission.WRITE_EXTERNAL_STORAGE),
-//                REQUEST_CODE)
-//        }
-//    }
 
     override fun onRequestPermissionsResult(
         requestCode: Int,
@@ -110,20 +99,4 @@ class DetailFoodActivity : AppCompatActivity() {
         intent.data = uri
         startActivity(intent)
     }
-
-//    private fun displayNutritionalInfo() {
-//        // Assuming you fetched the recognized food and its nutritional information
-//        val foodName = "Fried Rice"
-//        val calories = 50
-//        val carbs = 33
-//        val protein = 4
-//        val fats = 10
-//
-//        // Update UI with the food info
-//        binding.foodName.text = foodName
-////        binding.calories.text = "Calories: $calories"
-////        binding.carbs.text = "Carbs: $carbs g"
-////        binding.protein.text = "Protein: $protein g"
-////        binding.fats.text = "Fats: $fats g"
-//    }
 }

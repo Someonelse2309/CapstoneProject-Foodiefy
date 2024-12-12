@@ -5,12 +5,14 @@ import android.content.Intent
 import android.content.pm.PackageManager
 import android.net.Uri
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
+import androidx.core.net.toUri
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.AppBarConfiguration
@@ -19,6 +21,7 @@ import androidx.navigation.ui.setupWithNavController
 import com.example.foodiefy.databinding.ActivityMainBinding
 import com.example.foodiefy.ui.scan.scanFood.ScanFoodActivity
 import com.example.foodiefy.ui.scan.scanIngredient.ScanIngredientsActivity
+import com.example.foodiefy.ui.scan.scanIngredient.ScanIngredientsActivity.Companion.CAMERAX_RESULT
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class MainActivity : AppCompatActivity() {
@@ -28,6 +31,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var fabFood: FloatingActionButton
     private lateinit var fabIngredients: FloatingActionButton
     private lateinit var blurOverlay: View
+    private var currentImageUri: Uri? = null
 
     private var isFabMenuOpen = false
 
@@ -120,7 +124,15 @@ class MainActivity : AppCompatActivity() {
 
     private fun startCameraXIngredients() {
         val intent = Intent(this, ScanIngredientsActivity::class.java)
-        startActivity(intent)
+        launcherIntentCameraX.launch(intent)
+    }
+
+    private val launcherIntentCameraX = registerForActivityResult(
+        ActivityResultContracts.StartActivityForResult()
+    ) {
+        if (it.resultCode == CAMERAX_RESULT) {
+            currentImageUri = it.data?.getStringExtra(ScanIngredientsActivity.EXTRA_CAMERAX_IMAGE)?.toUri()
+        }
     }
 
     companion object {
