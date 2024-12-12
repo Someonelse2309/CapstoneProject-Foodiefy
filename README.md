@@ -53,6 +53,74 @@ https://www.kaggle.com/datasets/kmader/food41?select=images
 ### Architecture 
 <img src="https://raw.githubusercontent.com/Someonelse2309/CapstoneProject-Foodiefy/main/Cloud%20Computing/Architecture.png" width="auto" height=350>
 
+### Steps to Deploy Foodiefy Backend APIs and Machine Learning Models to App Engine
+
+### Steps to Deploy Foodiefy Backend API to App Engine
+
+1. Clone this repository to Google Cloud Shell
+   ```bash
+   git clone https://github.com/Someone/CapstoneProject-Foodiefy.git
+   ```
+
+2. Open editor and move to this folder `Foodiefy API`
+   ```bash
+   cd CapstoneProject-Foodiefy/Cloud\\ Computing/Foodiefy\\ API
+   ```
+
+3. Activate required APIs & services
+   ```bash
+   gcloud services enable cloudbuild.googleapis.com \
+                          run.googleapis.com \
+                          firestore.googleapis.com \
+                          appengine.googleapis.com
+   ```
+
+4. Configure Firestore as your database
+    - Set up Firestore in Native mode.
+    - Create collections for:
+      - App Databases
+      - User Databases
+      - Recipes Databases
+      - Food Databases
+
+5. Run this command to install dependencies
+   ```bash
+   npm install
+   ```
+
+6. Change the configuration in `config.js`, `.env`, and `app.yaml` with new configuration.
+
+7. Deploy your app to App Engine with these commands
+   ```bash
+   gcloud init
+   gcloud app deploy
+   ```
+
+### Steps to Deploy Machine Learning Model API to App Engine
+
+1. Clone this repository to Google Cloud Shell
+   ```bash
+   git clone https://github.com/Someone/CapstoneProject-Foodiefy.git
+   ```
+
+2. Open editor and move to this folder `Machine Learning Model API`
+   ```bash
+   cd CapstoneProject-Foodiefy/Cloud\\ Computing/Machine\\ Learning\\ Model\\ API
+   ```
+
+3. Run this command to install dependencies
+   ```bash
+   npm install
+   ```
+
+4. Change the configuration in `app.yaml`, `.env`, and other relevant files with new configuration.
+
+5. Deploy your app to App Engine with these commands
+   ```bash
+   gcloud init
+   gcloud app deploy
+   ```
+
 ## Mobile Development Learning Path 
 ### Steps
 1. Clone this repository to your device
