@@ -53,8 +53,6 @@ https://www.kaggle.com/datasets/kmader/food41?select=images
 ### Architecture 
 <img src="https://raw.githubusercontent.com/Someonelse2309/CapstoneProject-Foodiefy/main/Cloud%20Computing/Architecture.png" width="auto" height=350>
 
-### Steps to Deploy Foodiefy Backend APIs and Machine Learning Models to App Engine
-
 ### Steps to Deploy Foodiefy Backend API to App Engine
 
 1. Clone this repository to Google Cloud Shell
