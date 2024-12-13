@@ -14,4 +14,10 @@
     <color name="yellow">#F8D558</color>
     <color name="orange">#EDA087</color>
     <color name="blue">#67A6BD</color>
+    <color name="hijau_pucat">#96CAB4</color>
+    <color name="hijau_cerah">#006C3F</color>
+    <color name="pink_weight">#DB2C54</color>
+    <color name="blue_weight">#4AC6FF</color>"
+    <color name="bounding_box_color">#FF9800</color>
+
 </resources>
