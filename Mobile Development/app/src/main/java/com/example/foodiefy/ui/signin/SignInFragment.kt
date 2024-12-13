@@ -64,9 +64,7 @@ class SignInFragment : Fragment() {
         passwordInput.addTextChangedListener(textWatcher)
 
         signInButton.setOnClickListener {
-            val intent = Intent(requireContext(), MainActivity::class.java)
-            startActivity(intent)
-            requireActivity().finish()
+            findNavController().navigate(R.id.action_signInFragment_to_welcomeFragment)
         }
 
         signInToSignUp.setOnClickListener{
