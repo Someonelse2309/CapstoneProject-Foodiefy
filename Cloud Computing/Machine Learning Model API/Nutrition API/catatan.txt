@@ -1,7 +1,7 @@
 di folder yg sama masukin Softmax_Epochs60.keras, lalu rename menjadi food_classifier.keras
 https://drive.google.com/file/d/1-sEQZNojNVeVlNFvqe3zelI99OJAPriZ/view?usp=sharing
 
-cara jalanin
+cara menjalankan
 1) python -m venv venv
 2) .\venv\Scripts\activate (supaya depedensi pisah sama python yg uda keinstall sebelumnya)
 3) pip install tensorflow
