@@ -186,10 +186,10 @@ class ScanIngredientsActivity : AppCompatActivity() {
         if (!isPopupShown) {
             // Tampilkan pop-up hanya jika belum ditampilkan
             val builder = android.app.AlertDialog.Builder(this)
-            builder.setTitle("Hasil Scan")
+            builder.setTitle("Your Ingredients :")
             builder.setMessage(newResult)
 
-            builder.setPositiveButton("Tutup") { dialog, _ ->
+            builder.setPositiveButton("Close") { dialog, _ ->
                 dialog.dismiss()
                 isPopupShown = false
                 startCamera()

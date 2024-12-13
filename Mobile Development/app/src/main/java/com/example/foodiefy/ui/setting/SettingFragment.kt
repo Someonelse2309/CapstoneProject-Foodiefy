@@ -32,19 +32,20 @@ class SettingFragment : Fragment() {
         val fab = activity?.findViewById<FloatingActionButton>(R.id.scanMain)
         fab?.hide()
 
-        val profileSetting: View = binding.gotoProfile
-        profileSetting.setOnClickListener{
+        binding.gotoProfile.setOnClickListener{
             findNavController().navigate(R.id.action_settingFragment_to_profileFragment)
         }
 
-        val aboutUsSetting: View = binding.gotoAboutUs
-        aboutUsSetting.setOnClickListener{
+        binding.gotoAboutUs.setOnClickListener{
             findNavController().navigate(R.id.action_settingFragment_to_aboutUsFragment)
         }
 
-        val termsSetting: View = binding.gotoTC
-        termsSetting.setOnClickListener{
+        binding.gotoTC.setOnClickListener{
             findNavController().navigate(R.id.action_settingFragment_to_termsFragment)
+        }
+
+        binding.logoutButton.setOnClickListener{
+            findNavController().navigate(R.id.action_logout)
         }
 
         Glide.with(this)

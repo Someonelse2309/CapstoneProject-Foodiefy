@@ -193,11 +193,10 @@
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:elevation="35dp"
-        android:layout_marginEnd="-135dp"
         android:background="@drawable/ic_next"
         app:layout_constraintBottom_toBottomOf="@+id/tc"
-        app:layout_constraintEnd_toEndOf="@+id/bg_setting"
-        app:layout_constraintStart_toEndOf="@+id/tc"
+        app:layout_constraintEnd_toEndOf="@+id/gotoAboutUs"
+        app:layout_constraintStart_toStartOf="@+id/gotoAboutUs"
         tools:src="@drawable/ic_next" />
 
     <Button
