@@ -4,12 +4,12 @@ const { addFavorite, removeFavorite, getFavorites } = require("../controllers/fa
 const authMiddleware = require("../middleware/authMiddleware");
 
 // Menambahkan resep ke favorit
-router.post("/favorites", authMiddleware, addFavorite);
+router.post("/", authMiddleware, addFavorite); // Pastikan rutenya menggunakan '/' dan bukan '/favorites'
 
 // Menghapus resep dari favorit
-router.delete("/favorites", authMiddleware, removeFavorite);
+router.delete("/", authMiddleware, removeFavorite); // Pastikan rutenya menggunakan '/' dan bukan '/favorites'
 
 // Mengambil semua resep favorit
-router.get("/favorites", authMiddleware, getFavorites);
+router.get("/", authMiddleware, getFavorites); // Pastikan rutenya menggunakan '/' dan bukan '/favorites'
 
 module.exports = router;

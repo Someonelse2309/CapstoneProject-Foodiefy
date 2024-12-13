@@ -25,12 +25,14 @@ const authRoutes = require("./routes/authRoutes");
 app.use("/auth", authRoutes);
 const userRoutes = require("./routes/userRoutes");
 app.use("/user", userRoutes);
-const infoRoutes = require('./routes/infoRoutes');
+const infoRoutes = require("./routes/infoRoutes");
 app.use("/info", infoRoutes);
-const nutritionRoutes = require('./routes/nutritionRoutes');
+const nutritionRoutes = require("./routes/nutritionRoutes");
 app.use("/nutrition", nutritionRoutes);
 const favoritesRoutes = require("./routes/favoritesRoutes");
 app.use("/favorites", favoritesRoutes);
+const recipeRoutes = require("./routes/recipeRoutes"); // Menambahkan route resep
+app.use("/recipes", recipeRoutes); // Menggunakan prefix /recipes
 
 // Start server
 const PORT = process.env.PORT || 8080;
