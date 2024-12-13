@@ -30,8 +30,120 @@
         android:name="com.example.foodiefy.ui.signup.SignUpFragment"
         android:label="Sign Up"
         tools:layout="@layout/fragment_sign_up">
-    <action
+        <action
+            android:id="@+id/action_signUpFragment_to_termsFragment"
+            app:destination="@id/termsFragment"/>
+        <action
         android:id="@+id/action_signUpFragment_to_signInFragment"
         app:destination="@id/signInFragment" />
+        <action
+            android:id="@+id/action_signUpFragment_to_welcomeFragment"
+            app:destination="@+id/welcomeFragment" />
     </fragment>
+
+    <fragment
+        android:id="@+id/termsFragment"
+        android:name="com.example.foodiefy.ui.setting.TermsFragment"
+        android:label="Terms n Conditiona"
+        tools:layout="@layout/fragment_terms">
+        <action
+            android:id="@+id/action_termsFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.example.foodiefy.ui.welcome.WelcomeFragment"
+        android:label="@string/welcome"
+        tools:layout="@layout/fragment_welcome">
+        <action
+            android:id="@+id/action_welcomeFragment_to_genderFragment"
+            app:destination="@id/genderFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/genderFragment"
+        android:name="com.example.foodiefy.ui.gender.GenderFragment"
+        android:label="@string/title_gender"
+        tools:layout="@layout/fragment_gender">
+        <action
+            android:id="@+id/action_genderFragment_to_ageFragment"
+            app:destination="@id/ageFragment" />
+        <action
+            android:id="@+id/action_genderFragment_to_welcomeFragment"
+            app:destination="@id/welcomeFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/ageFragment"
+        android:name="com.example.foodiefy.ui.age.AgeFragment"
+        android:label="@string/title_age"
+        tools:layout="@layout/fragment_age">
+        <action
+            android:id="@+id/action_ageFragment_to_weightFragment"
+            app:destination="@id/weightFragment" />
+        <action
+            android:id="@+id/action_ageFragment_to_genderFragment"
+            app:destination="@id/genderFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/weightFragment"
+        android:name="com.example.foodiefy.ui.weight.WeightFragment"
+        android:label="@string/title_weight"
+        tools:layout="@layout/fragment_weight">
+        <action
+            android:id="@+id/action_weightFragment_to_heightFragment"
+            app:destination="@id/heightFragment" />
+        <action
+            android:id="@+id/action_weightFragment_to_ageFragment"
+            app:destination="@id/ageFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/heightFragment"
+        android:name="com.example.foodiefy.ui.height.HeightFragment"
+        android:label="@string/title_height"
+        tools:layout="@layout/fragment_height">
+        <action
+            android:id="@+id/action_heightFragment_to_activityFragment"
+            app:destination="@id/activityFragment" />
+        <action
+            android:id="@+id/action_heightFragment_to_weightFragment"
+            app:destination="@+id/weightFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/activityFragment"
+        android:name="com.example.foodiefy.ui.activity.ActivityFragment"
+        android:label="@string/title_activity"
+        tools:layout="@layout/fragment_activity">
+        <action
+            android:id="@+id/action_activityFragment_to_calorieFragment"
+            app:destination="@id/calorieFragment"/>
+        <action
+            android:id="@+id/action_activityFragment_to_heightFragment"
+            app:destination="@id/heightFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/calorieFragment"
+        android:name="com.example.foodiefy.ui.calorieIntakes.CalorieFragment"
+        android:label="Calorie Fragment"
+        tools:layout="@layout/fragment_calorie">
+        <action
+            android:id="@+id/action_calorieFragment_to_mainActivity"
+            app:destination="@id/mainActivity"/>
+        <action
+            android:id="@+id/action_calorieFragment_to_activityFragment"
+            app:destination="@id/activityFragment"/>
+    </fragment>
+
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.foodiefy.MainActivity"
+        android:label=""
+        tools:layout="@layout/activity_main">
+    </activity>
+
 </navigation>

@@ -18,69 +18,68 @@
 
     <View
         android:id="@+id/kotak_regis"
-        android:layout_width="417dp"
-        android:layout_height="586dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="150dp"
         android:background="@drawable/rounded_white_box"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHeight_percent="0.8"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.4" />
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintWidth_percent="0.9" />
+
 
     <View
         android:id="@+id/garis_horizontal"
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:layout_marginBottom="340dp"
         android:background="#80000000"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/kotak_regis"
+        android:layout_marginTop="50dp"/>
 
+    <!-- Vertical Divider -->
     <View
         android:id="@+id/garis_vertical"
         android:layout_width="1dp"
-        android:layout_height="48dp"
-        android:layout_marginBottom="387dp"
+        android:layout_height="50dp"
         android:background="#80000000"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/kotak_regis" />
 
     <TextView
         android:id="@+id/signIn"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="205dp"
-        android:layout_marginBottom="385dp"
         android:text="@string/sign_in"
         android:textAlignment="center"
         android:textColor="#006C3F"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textSize="24sp"
 
+        app:layout_constraintBottom_toBottomOf="@+id/garis_vertical"
+        app:layout_constraintEnd_toStartOf="@+id/garis_vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/kotak_regis" />
+
+    <!-- Sign Up Text -->
     <TextView
         android:id="@+id/signUp"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="205dp"
-        android:layout_marginBottom="385dp"
         android:text="@string/sign_Up"
         android:textAlignment="center"
-        android:textStyle="bold"
         android:textColor="#006C3F"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/garis_horizontal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/garis_vertical"
+        app:layout_constraintTop_toTopOf="@+id/kotak_regis" />
 
     <TextView
         android:id="@+id/textNama"
@@ -267,19 +266,34 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="75dp"
-            android:text="@string/tnc"
             android:textColor="#80006C3F"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent">
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginEnd="135dp">
 
         </CheckBox>
+
+        <TextView
+            android:id="@+id/tnc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="90dp"
+            android:textColor="#80006C3F"
+            android:layout_marginStart="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="@string/terms">
+
+        </TextView>
+
 
         <Button
             android:id="@+id/submitButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="#80006C3F"
+            android:backgroundTint="#96CAB4"
             android:text="@string/create_acc"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
