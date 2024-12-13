@@ -18,4 +18,6 @@
     <color name="hijau_cerah">#006C3F</color>
     <color name="pink_weight">#DB2C54</color>
     <color name="blue_weight">#4AC6FF</color>"
+    <color name="bounding_box_color">#FF9800</color>
+
 </resources>

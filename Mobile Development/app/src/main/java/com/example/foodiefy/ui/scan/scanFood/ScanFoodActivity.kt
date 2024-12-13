@@ -17,20 +17,16 @@ import android.view.Surface
 import android.view.WindowInsets
 import android.view.WindowManager
 import android.widget.Toast
-import androidx.activity.result.contract.ActivityResultContracts
 import androidx.camera.core.CameraSelector
 import androidx.camera.core.ImageAnalysis
 import androidx.camera.core.ImageCapture
-import androidx.camera.core.ImageCaptureException
 import androidx.camera.core.ImageProxy
 import androidx.camera.core.Preview
 import androidx.camera.lifecycle.ProcessCameraProvider
 import androidx.core.app.ActivityCompat
 import com.example.foodiefy.R
-import com.example.foodiefy.databinding.ActivityMainBinding
-import org.tensorflow.lite.task.vision.classifier.Classifications
+import org.tensorflow.lite.task.gms.vision.classifier.Classifications
 import java.io.File
-import java.text.NumberFormat
 import java.text.SimpleDateFormat
 import java.util.Locale
 
@@ -44,8 +40,6 @@ class ScanFoodActivity : AppCompatActivity() {
 
     // Define the directory where images will be saved
     private lateinit var outputDirectory: File
-
-    private var isImageCaptured = false // Track if an image has already been captured
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -69,6 +63,7 @@ class ScanFoodActivity : AppCompatActivity() {
         super.onResume()
         hideSystemUI()
         startCamera()
+        isResultHandled = false
     }
 
     private fun startCamera() {
@@ -125,13 +120,15 @@ class ScanFoodActivity : AppCompatActivity() {
 
                 override fun onResults(results: List<Classifications>?, inferenceTime: Long) {
                     runOnUiThread {
-                        if (!isResultHandled) { // Cek apakah hasil sudah diproses
+                        if (!isResultHandled) {
                             results?.let { classifications ->
                                 if (classifications.isNotEmpty() && classifications[0].categories.isNotEmpty()) {
                                     val topCategory = classifications[0].categories.maxByOrNull { category -> category.score }
 
                                     topCategory?.let { category ->
                                         val displayResult = "${category.label}"
+
+                                        isResultHandled = true // Tandai bahwa hasil telah diproses
 
                                         // Kirim hasil klasifikasi ke DetailFoodActivity
                                         val photoFile = File(
@@ -145,13 +142,13 @@ class ScanFoodActivity : AppCompatActivity() {
                                             Log.e(TAG, "File tidak ditemukan!")
                                         }
                                         val imageUri = Uri.fromFile(photoFile)
-                                        val intent = Intent(this@ScanFoodActivity, DetailFoodActivity::class.java)
-                                        intent.putExtra("classificationResult", displayResult)
-                                        intent.putExtra("imageUri", imageUri.toString())
-                                        startActivity(intent)
-
-                                        isResultHandled = true // Tandai bahwa hasil telah diproses
-                                        stopCamera()
+                                        Handler(Looper.getMainLooper()).postDelayed({
+                                            val intent = Intent(this@ScanFoodActivity, DetailFoodActivity::class.java)
+                                            intent.putExtra("classificationResult", displayResult)
+                                            intent.putExtra("imageUri", imageUri.toString())
+                                            startActivity(intent)
+                                            stopCamera() // Nonaktifkan kamera
+                                        }, 3000)
                                     }
                                 } else {
                                     Log.e("ScanFoodActivity", "Hasil klasifikasi kosong.")
@@ -215,57 +212,6 @@ class ScanFoodActivity : AppCompatActivity() {
             }
         }
     }
-
-//    private fun captureAndClassifyImage() {
-//        val imageCapture = imageCapture ?: return
-//        imageCapture.takePicture(
-//            ContextCompat.getMainExecutor(this),
-//            object : ImageCapture.OnImageCapturedCallback() {
-//                override fun onCaptureSuccess(imageProxy: ImageProxy) {
-//                    // Kirim gambar untuk diklasifikasi
-//                    foodClassifierHelper.classifyImage(imageProxy)
-//                    imageProxy.close() // Jangan lupa menutup imageProxy
-//                }
-//
-//                override fun onError(exception: ImageCaptureException) {
-//                    Toast.makeText(this@ScanFoodActivity, "Gagal menangkap gambar", Toast.LENGTH_SHORT).show()
-//                    Log.e(TAG, "Error capturing image: ${exception.message}")
-//                }
-//            }
-//        )
-//    }
-
-//    private fun captureImage() {
-//        val imageCapture = imageCapture ?: return
-//
-//        val photoFile = File(
-//            outputDirectory,
-//            SimpleDateFormat(
-//                FILENAME_FORMAT, Locale.US
-//            ).format(System.currentTimeMillis()) + ".jpg"
-//        )
-//
-//        val outputOptions = ImageCapture.OutputFileOptions.Builder(photoFile).build()
-//
-//        imageCapture.takePicture(
-//            outputOptions, ContextCompat.getMainExecutor(this),
-//            object : ImageCapture.OnImageSavedCallback {
-//                override fun onError(exc: ImageCaptureException) {
-//                    Log.e(TAG, "Photo capture failed: ${exc.message}", exc)
-//                }
-//
-//                override fun onImageSaved(output: ImageCapture.OutputFileResults) {
-//                    val savedUri = Uri.fromFile(photoFile)
-//                    Log.d(TAG, "Photo capture succeeded: $savedUri")
-//
-//                    // Pass the captured image URI to a new activity
-//                    val intent = Intent(this@ScanFoodActivity, DetailFoodActivity::class.java)
-//                    intent.putExtra("imageUri", savedUri.toString())
-//                    startActivity(intent)
-//                }
-//            }
-//        )
-//    }
 
     // Get the directory where files will be saved
     private fun getOutputDirectory(): File {

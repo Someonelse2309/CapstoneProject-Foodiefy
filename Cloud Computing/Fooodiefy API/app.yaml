@@ -1,0 +1,4 @@
+runtime: nodejs16
+
+env_variables:
+  FIREBASE_CONFIG: "./configuration/firebase-code.json"
