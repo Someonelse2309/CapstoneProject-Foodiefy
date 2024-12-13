@@ -50,31 +50,34 @@
         app:layout_constraintTop_toBottomOf="@id/logolurus"
         android:layout_marginTop="40dp"
         android:textColor="@color/black"
-        tools:textAlignment="center"/>
+        android:textAlignment="center"/>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/heightInputTextLayout"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="75dp"
         android:layout_marginTop="70dp"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_input_height">
-
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_input_height"
+        app:hintEnabled="true"
+        app:hintAnimationEnabled="false">
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/heightEditText"
-            android:layout_width="225dp"
-            android:layout_height="48dp"
-            android:layout_marginStart="89dp"
-            android:background="#597294"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/rounded_text_height"
             android:ems="10"
-            android:inputType="number"
+            android:hint="@string/hint_high"
+            android:textAlignment="center"
             tools:ignore="SpeakableTextPresentCheck"
-            tools:text="Enter your height"
-            tools:textAlignment="center"
-            tools:textColor="#ffffff"
-            tools:textSize="15sp" />
+            tools:textColor="#613E00"
+            tools:textSize="15sp"
+            android:padding="12dp"
+            android:gravity="center"
+            android:inputType="number"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <ImageView
@@ -85,7 +88,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/heightInputTextLayout"
-        android:layout_marginTop="60dp"/>
+        android:layout_marginTop="30dp"/>
 
     <Button
         android:id="@+id/continueButton"

@@ -80,5 +80,13 @@
     <string name="hint_phone">Enter your phone number</string>
     <string name="hint_confirm_pass">Enter your password again</string>
     <string name="image_classifier_failed">Image classifier failed to initialize. See error logs for details</string>
+    <string name="terms"><![CDATA[Terms & Condition]]></string>
+    <string name="hint_umur">Enter your age</string>
+    <string name="hint_bb">Enter your weight</string>
+    <string name="hint_high">Enter your high</string>
+    <string name="text_calorie">Yayy, your data \nis complete!!</string>
+    <string name="text_calorie_intakes">Your body needs</string>
+    <string name="hasil_calorie">hasil</string>
+    <string name="title_calorie">Calorie Intakes</string>
     <string name="tflitevision_is_not_initialized_yet">TfLiteVision is not initialized yet</string>
 </resources>
