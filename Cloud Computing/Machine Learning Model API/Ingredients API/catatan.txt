@@ -5,7 +5,7 @@ https://drive.google.com/file/d/1w1PXgKoMHayuwKPJzF_VqHqWP4j52oqB/view?usp=drive
 cara jalanin
 <<<<<<< HEAD
 python -m venv venv
-.\venv\Scripts\activate (supaya depedensi pisah sama python yg uda keinstall di lappy)
+.\venv\Scripts\activate (supaya depedensi pisah sama python yg uda keinstall sebelumnya)
 pip install tensorflow
 pip install flask
 pip install Pillow
