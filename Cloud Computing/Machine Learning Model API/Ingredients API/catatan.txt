@@ -1,10 +1,13 @@
-di folder yg sama masukin Softmax_Epochs60.keras, lalu rename menjadi ingredients_classifier.keras
-https://drive.google.com/file/d/1-sEQZNojNVeVlNFvqe3zelI99OJAPriZ/view?usp=sharing
+di folder yg sama masukkan food_recognition_model_EffNet_OPT_multiclass_(71.83839082717896%).keras, lalu rename menjadi ingredients_classifier.keras
+https://drive.google.com/file/d/1w1PXgKoMHayuwKPJzF_VqHqWP4j52oqB/view?usp=drive_link
 
-cara jalanin
+di folder yg sama masukkan fresh-rotten-MobileNetV2.keras lalu rename menjadi freshness_classifier.keras
+https://drive.google.com/file/d/1LX1bibF40OzaYj8xVeoiOQ3wltnBwi4_/view?usp=drive_link
+
+cara menjalankan
 1) python -m venv venv
 2) .\venv\Scripts\activate (supaya depedensi pisah sama python yg uda keinstall sebelumnya)
 3) pip install tensorflow
 4) pip install flask
 5) pip install Pillow
-6) python app.py atau flask run
+6) python final_bisa_busuk_juga.py atau flask run
