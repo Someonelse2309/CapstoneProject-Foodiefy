@@ -9,14 +9,14 @@ import requests
 app = Flask(__name__)
 
 # Load model
-model = tf.keras.models.load_model('food_classifier.keras')
+model = tf.keras.models.load_model('food_classifier.keras') #masukkan file ini di folder yang sama
 
 # Load food data (misalnya dari file JSON)
 with open('FoodJSON.json') as f:
     food_data = json.load(f)
 
 # URL API Node.js
-NODE_API_URL = 'http://localhost:8080/nutrition/add'
+NODE_API_URL = 'http://localhost:8080/nutrition/add' #ganti dengan link deploy gcp
 
 def require_auth(f):
     def decorated(*args, **kwargs):
@@ -28,6 +28,7 @@ def require_auth(f):
 
         return f(*args, **kwargs)
     return decorated
+
 @app.route('/predict', methods=['POST'])
 def predict():
     try:

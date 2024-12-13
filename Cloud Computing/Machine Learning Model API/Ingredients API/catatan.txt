@@ -6,4 +6,4 @@ python -m venv venv
 pip install tensorflow
 pip install flask
 pip install Pillow
-python app.py atau flask run
+python final.py

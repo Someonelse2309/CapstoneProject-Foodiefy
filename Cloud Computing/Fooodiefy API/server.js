@@ -29,6 +29,8 @@ const infoRoutes = require('./routes/infoRoutes');
 app.use("/info", infoRoutes);
 const nutritionRoutes = require('./routes/nutritionRoutes');
 app.use("/nutrition", nutritionRoutes);
+const favoritesRoutes = require("./routes/favoritesRoutes");
+app.use("/favorites", favoritesRoutes);
 
 // Start server
 const PORT = process.env.PORT || 8080;
