@@ -1,9 +1,19 @@
-di folder yg sama masukin ingredients_classifier.keras (ada di drive kulkas)
+di folder yg sama masukin Softmax_Epochs60.keras, lalu rename menjadi ingredients_classifier.keras
+https://drive.google.com/file/d/1-sEQZNojNVeVlNFvqe3zelI99OJAPriZ/view?usp=sharing
 
 cara jalanin
+<<<<<<< HEAD
 python -m venv venv
 .\venv\Scripts\activate (supaya depedensi pisah sama python yg uda keinstall di lappy)
 pip install tensorflow
 pip install flask
 pip install Pillow
 python final.py
+=======
+1) python -m venv venv
+2) .\venv\Scripts\activate (supaya depedensi pisah sama python yg uda keinstall sebelumnya)
+3) pip install tensorflow
+4) pip install flask
+5) pip install Pillow
+6) python app.py atau flask run
+>>>>>>> 0738c41cdcfd2f87a89cf867df6b47075566043e
