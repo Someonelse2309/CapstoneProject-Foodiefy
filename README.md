@@ -74,7 +74,7 @@ https://www.kaggle.com/datasets/kmader/food41?select=images
    ```
 
 4. Ensure Firestore database is correctly configured:
-   - The necessary Firestore collections (App Databases, User Databases, Recipes Databases, Food Databases) should already be created.
+   - The Firestore collections (App Databases, User Databases, Recipes Databases, Food Databases) are already created.
    - Confirm the JSON key file for Firestore is present in the `configuration` folder within the `Foodiefy API` directory.
 
 5. Run this command to install dependencies
